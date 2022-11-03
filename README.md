@@ -7,5 +7,5 @@
 ## Translations in the [Translations Folder](https://github.com/ErnestasKaralius/Projects/tree/main/Translations) are from a variety of games & mods I have translated since 2019.
 
 ## Scripts in the [Roblox Folder]() are from my games on the Roblox platform:
-### -[Test Tycoon](https://www.roblox.com/games/8718844267/Test-Tycoon)
-### -[Test Gears](https://www.roblox.com/games/10438395581/Test-Gears)
+-[Test Tycoon](https://www.roblox.com/games/8718844267/Test-Tycoon)
+-[Test Gears](https://www.roblox.com/games/10438395581/Test-Gears)
