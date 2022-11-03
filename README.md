@@ -4,7 +4,7 @@
 
 ## Programs in the [C Folder](https://github.com/ErnestasKaralius/C-Programs/tree/main/C) have been written starting 2022.
 
-## Translations in the [Translations Folder](https://github.com/ErnestasKaralius/Projects/tree/main/Translations) are from a variety of games & mods I have translated since 2019.
+## Translations in the [Translations Folder](https://github.com/ErnestasKaralius/Projects/tree/main/Translations) are from a variety of games & mods.
 - [Antiyoy Online](https://play.google.com/store/apps/details?id=yio.tro.onliyoy&gl=US)
 - [Vodobanka](https://play.google.com/store/apps/details?id=yio.tro.vodobanka&gl=US)
 - [Achikaps](https://play.google.com/store/apps/details?id=yio.tro.achikaps&gl=US)
