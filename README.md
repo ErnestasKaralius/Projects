@@ -5,6 +5,10 @@
 ## The programs in the [C Folder](https://github.com/ErnestasKaralius/C-Programs/tree/main/C) have been written starting 2022.
 
 ## Translations in the [Translations Folder](https://github.com/ErnestasKaralius/Projects/tree/main/Translations) are from a variety of games & mods I have translated since 2019.
+- [Antiyoy Online](https://play.google.com/store/apps/details?id=yio.tro.onliyoy&gl=US)
+- [Vodobanka](https://play.google.com/store/apps/details?id=yio.tro.vodobanka&gl=US)
+- [Achikaps](https://play.google.com/store/apps/details?id=yio.tro.achikaps&gl=US)
+- [Trouble in Terrorist Town](https://steamcommunity.com/sharedfiles/filedetails/?id=2370983340)
 
 ## Scripts in the [Roblox Folder](https://github.com/ErnestasKaralius/Projects/tree/main/Roblox) are from my games on the Roblox platform:
 - [Test Tycoon](https://www.roblox.com/games/8718844267/Test-Tycoon)
