@@ -1,0 +1,76 @@
+    
+    <language name="lt_LT" title="Lithuanian" author="Ernestas Karalius">
+        <!-- Special characters -->
+        <string key="lang_characters" value="ąčęėįšųūžĄČĘĖĮŠŲŪŽ„“ö"/>
+
+        <!-- Info -->
+        <string key="about_game_article" value="Tai yra paprastas žaidimas, kurio tikslas yra užpildyti lauką spalvotomis figūromis. Nors taisyklės yra lengvos, kartais teks pagalvoti. Asmeniškai mane šis žaidimas taip įtraukė, kad aš perėjau 500 lygių iki jo išleidimo.# #El. paštas: yiotro93@gmail.com #Reddit: /r/yiotro_games #Žaidimą sukūrė yiotro"/>
+        <string key="secret_screen_text" value="Oho! Tai yra slaptasis ekranas."/>
+
+        <!-- Skirmish -->
+        <string key="quick_game" value="Spartusis žaidimas"/>
+        <string key="start" value="Pradėti"/>
+        <string key="difficulty" value="Sunkumas"/>
+        <string key="easy" value="Lengvas"/>
+        <string key="normal" value="Normalus"/>
+        <string key="hard" value="Sunkus"/>
+        <string key="expert" value="Ekspertas"/>
+
+        <!-- Calendar -->
+        <string key="calendar" value="Kalendorius"/>
+        <string key="january" value="Sausis"/>
+        <string key="february" value="Vasaris"/>
+        <string key="march" value="Kovas"/>
+        <string key="april" value="Balandis"/>
+        <string key="may" value="Gegužė"/>
+        <string key="june" value="Birželis"/>
+        <string key="july" value="Liepa"/>
+        <string key="august" value="Rugpjūtis"/>
+        <string key="september" value="Rugsėjis"/>
+        <string key="october" value="Spalis"/>
+        <string key="november" value="Lapkritis"/>
+        <string key="december" value="Gruodis"/>
+
+        <!-- Gameplay -->
+        <string key="level_completed" value="[name] lygis pereitas"/>
+        <string key="next" value="Toliau"/>
+        <string key="two_figures_same_color" value="Negalima sujungti dviejų tos pačios spalvos figūrų."/>
+
+        <!-- Campaign -->
+        <string key="campaign" value="Kampanija"/>
+        <string key="t0" value="Spustelėkite ant apskritimo ir braukite pirštu, kad ištrauktumėte spalvą."/>
+        <string key="t1" value="Kiekvienas apskritimas rodo figūrą, kurioje jis turi būti."/>
+        <string key="t2" value="Bakstelėkite and balto apskritimo, kad ištrintumėte visas ištrauktas spalvas."/>
+        <string key="t4" value="Kai kurie langeliai gali būti pasiekti tik su tam tikra figūra."/>
+        <string key="t6" value="Skaičius apskritime rodo kvadratų skaičių figūroje."/>
+        <string key="t9" value="Figūras galima sukti, bet jų negalima apversti."/>
+
+        <!-- Pause menu -->
+        <string key="resume" value="Tęsti"/>
+        <string key="main_menu" value="Pagrindinis meniu"/>
+        <string key="restart" value="Pradėti iš naujo"/>
+        <string key="confirm_restart" value="Tikrai pradėti iš naujo?"/>
+        <string key="cancel" value="Atšaukti"/>
+        <string key="yes" value="Taip"/>
+        <string key="no" value="Ne"/>
+
+        <!-- Settings -->
+        <string key="language" value="Kalba"/>
+        <string key="sound" value="Garsas"/>
+        <string key="full_screen" value="Visas ekranas"/>
+        <string key="settings" value="Nustatymai"/>
+        <string key="languages" value="Kalbos"/>
+        <string key="color_blind_mode" value="Daltoniko režimas"/>
+        <string key="blinking_shapes" value="Mirksinčios figūros"/>
+
+        <!-- Other -->
+        <string key="special_thanks_title" value="Ypatinga padėka"/>
+        <string key="special_thanks_begin" value="Ypatinga padėka šiems žmonėms: #"/>
+        <string key="caught_exception" value="O ne, kažkas nutiko! # #Jei jums nesudėtinga, tada padarykite ekrano nuotrauką ir išsiųskite ją man el. paštu: yiotro93@gmail.com"/>
+        <string key="keyboard_layout" value="ą ž e r t y u i o p į;a s d f g h j k l ų ė;z ū c v b n m č š ę"/>
+        <string key="link_copied_to_clipboard" value="Nuoroda nukopijuota į iškarpinę"/>
+        <string key="want_more" value="Noriu daugiau"/>
+        <string key="about_pro_version" value="Sveiki! #Jeigu norite padėti kūrėjui (man), tada nusipirkite pilną šio žaidimo versiją..#Aš gerbiu žaidėjus ir todėl nusprendžiau neįtraukti jokių reklamų ar mikrosandorių į šį žaidimą.#Mokama versija turi kelis pranašumus:#- Daugiau lygių (1.5 tūkst.)#- Kalendoriaus režimas.#- Sparčiojo žaidimo režimas"/>
+        <string key="download" value="Atsisiųsti"/>
+
+    </language>

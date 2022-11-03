@@ -1,0 +1,370 @@
+    
+    <language name="lt_LT" title="- Lithuanian -" author="Ernestas Karalius">
+        <!-- Special characters -->
+        <string key="lang_characters" value= "ĄąČčĘęĖėĮįŠšŲųŪūŽž„“"/>
+
+        <!-- Info -->
+        <string key="about_game" value="Vodobanka yra paprastas taktinis žaidimas, kuriame jūs valdote specialiųjų pajėgų komandą. Jame nėra nei reklamų, nei mikrosandorių.
+            #
+            #Šis žaidimas yra lengvesnis už kai kuriuos kitus taktinius žaidimus, bet žaidėjui vis tiek reikės priimti teisingus sprendimus ir planuoti savo veiksmus į priekį.
+            #
+            #El. paštas: yiotro93@gmail.com
+            #Žaidimą sukūrė yiotro
+        "/>
+        <string key="secret_screen_text" value="Oho! Tai yra slaptasis ekranas."/>
+        <string key="about_pro_version" value="Sveiki! Jeigu norite padėti kūrėjui (man), tada nusipirkite pilną šio žaidimo versiją.
+        #Aš gerbiu žaidėjus ir todėl nusprendžiau neįtraukti jokių reklamų ar mikrosandorių į šį žaidimą.
+        #Beje, šio žaidimo nemokama versija turi daug turinio.
+        #Svarbu: nepašalinkite nemokamos versijos iki pirmojo mokamos versijos paleidimo.
+        #Mokama versija turi kelis pranašumus:
+        #- Daugiau lygių
+        #- Lygių redaktorius"/>
+
+
+        <!-- Choose game mode menu-->
+        <string key="skirmish" value="Spartusis žaidimas"/>
+        <string key="campaign" value="Kampanija"/>
+        <string key="load" value="Įkelti"/>
+        <string key="editor" value="Redaktorius"/>
+        <string key="user_levels" value="Žaidėjų lygiai"/>
+        <string key="extra" value="Papildomas turinys"/>
+
+
+        <!-- Skirmish menu -->
+        <string key="difficulty" value="Sunkumas"/>
+        <string key="easy" value="lengvas"/>
+        <string key="normal" value="normalus"/>
+        <string key="hard" value="sunkus"/>
+        <string key="expert" value="ekspertas"/>
+        <string key="start" value="Pradėti"/>
+        <string key="level_size" value="Lygio dydis"/>
+        <string key="tiny" value="mažytis"/>
+        <string key="small" value="mažas"/>
+        <string key="normal" value="normalus"/>
+        <string key="big" value="didelis"/>
+        <string key="giant" value="didžiulis"/>
+        <string key="swat" value="Specialiosios pajėgos"/>
+        <string key="equipment" value="Ginkluotė"/>
+        <string key="random" value="Atsitiktina"/>
+        <string key="mix" value="Maišyta"/>
+        <string key="smoke_and_sho" value="Dūminė + šo"/>
+        <string key="lightning_and_sho" value="Žaibinė + šo"/>
+        <string key="rocket_and_sho" value="Raketinė + šo"/>
+        <string key="vip_rescue" value="Eskortuoti VIP'ą"/>
+        <string key="choose" value="Pasirinkite"/>
+        <string key="interrogate_vip" value="Apklausti VIP'ą"/>
+        <string key="defuse_suitcase" value="Išminuoti lagaminą"/>
+        <string key="investigation" value="Atlikti tyrimą"/>
+
+
+        <!-- Etc -->
+        <string key="loading" value="Įkeliama"/>
+        <string key="high_score" value="Rekordas"/>
+        <string key="score" value="Taškai"/>
+        <string key="clear" value="Valyti"/> <!-- verb -->
+        <string key="confirm_clear_progress" value="Valyti progresą?"/>
+        <string key="hide_completed" value="Slėpti pereitus"/>
+        <string key="max_result" value="Daugiausia taškų"/>
+        <string key="filter_by_name" value="Filtruoti pagal pavadinimą"/>
+        <string key="autosave" value="Automatinis išsaugojimas"/>
+        <string key="onliyoy_release" value="Sveiki! # #Išleidau naują žaidimą pavadinimu Antiyoy Online. Tai yra mano senesnio žaidimo Antiyoy internetinė versija. Jei esate susidomėję, spustelėkite mygtuką apačioje :)"/>
+
+
+        <!-- Calendar -->
+        <string key="calendar" value="Kalendorius"/>
+        <string key="january" value="Sausis"/>
+        <string key="february" value="Vasaris"/>
+        <string key="march" value="Kovas"/>
+        <string key="april" value="Balandis"/>
+        <string key="may" value="Gegužė"/>
+        <string key="june" value="Birželis"/>
+        <string key="july" value="Liepa"/>
+        <string key="august" value="Rugpjūtis"/>
+        <string key="september" value="Rugsėjis"/>
+        <string key="october" value="Spalis"/>
+        <string key="november" value="Lapkritis"/>
+        <string key="december" value="Gruodis"/>
+
+        <!-- Pause menu -->
+        <string key="resume" value="Tęsti"/>
+        <string key="save" value="Išsaugoti"/>
+        <string key="main_menu" value="Pagrindinis meniu"/>
+        <string key="restart" value="Pradėti iš naujo"/>
+        <string key="cancel" value="Atšaukti"/>
+        <string key="confirm_restart" value="Tikrai pradėti iš naujo?"/>
+        <string key="yes" value="Taip"/>
+        <string key="no" value="Ne"/>
+        <string key="confirm_main_menu" value="Grįžti į pagrindinį meniu?"/>
+
+
+        <!-- Weapons -->
+        <string key="fist" value="Kumščiai"/>
+        <string key="handgun" value="Pistoletas"/>
+        <string key="shotgun" value="Šautuvas"/>
+        <string key="machine_gun" value="Kulkosvaidis"/>
+
+
+        <!-- Furniture -->
+        <string key="living_room" value="Svetainė"/>
+        <string key="office" value="Biuras"/>
+        <string key="bathroom" value="Vonia"/>
+        <string key="bedroom" value="Miegamasis"/>
+        <string key="kitchen" value="Virtuvė"/>
+        <string key="seats" value="Sėdynės"/>
+        <string key="desks" value="Stalai"/>
+        <string key="plants" value="Augalai"/>
+        <string key="miscellaneous" value="Įvairūs"/>
+        <string key="lamps" value="Lempos"/>
+        <string key="store" value="Parduotuvė"/>
+
+
+        <!-- Other gameplay stuff -->
+        <string key="ok" value="Gerai"/>
+        <string key="off" value="išj."/>
+        <string key="on" value="įj."/>
+        <string key="level" value="Lygis"/>
+        <string key="launch" value="Pradėti"/>
+        <string key="male" value="vyras"/>
+        <string key="female" value="moteris"/>
+        <string key="kg" value="kg."/> <!-- kilograms -->
+        <string key="m" value="m."/> <!-- meters -->
+        <string key="suspect_name_vowels" value="a a o u e e i"/>
+        <string key="suspect_name_consonants" value="r r t p p d f g h k l c v b n m c"/>
+        <string key="suspect_surname_vowels" value="o o o e u e a"/>
+        <string key="suspect_surname_consonants" value="r r t p p d f g h k l c v b n m c"/>
+        <string key="clues" value="Įkalčiai"/>
+        <string key="not" value="ne"/>
+        <string key="less" value="mažiau"/>
+        <string key="more" value="daugiau"/>
+        <string key="suspects" value="Įtariamieji"/>
+        <string key="boss_spotted_cops" value="Mafijos bosas pastebėjo policininkus"/>
+        <string key="wrong_suspect" value="Ne tas banditas"/>
+        <string key="swat_member_killed" value="Mirė specialiųjų pajėgų narys"/>
+
+
+        <!-- Context menu -->
+        <string key="cell" value="Langelis"/>
+        <string key="walk" value="Eiti"/>
+        <string key="door" value="Durys"/>
+        <string key="door_open" value="Atidaryti"/>
+        <string key="door_close" value="Uždaryti"/>
+        <string key="come_in" value="Užeiti"/>
+        <string key="come_up" value="Prieiti"/>
+        <string key="throw_flash_grenade" value="Apšviečiamoji granata"/>
+        <string key="throw_smoke_grenade" value="Dūminė granata"/>
+        <string key="throw_stun_grenade" value="Svaiginančioji granata"/>
+        <string key="arrest" value="Areštuoti"/>
+        <string key="suspect" value="Banditas"/>
+        <string key="civilian" value="Civilis"/>
+        <string key="scout" value="Žvalgytis"/>
+        <string key="storm" value="Šturmuoti"/>
+        <string key="blocker" value="Blokatorius"/>
+        <string key="window" value="Langas"/>
+        <string key="express_storm" value="Skubus šturmas"/>
+        <string key="arrest_everyone" value="Areštuoti visus"/>
+        <string key="remove_blocker_and_come_in" value="Šalinti ir įeiti"/>
+
+
+        <!-- End game menu -->
+        <string key="ok" value="Gerai"/>
+        <string key="next" value="Toliau"/>
+        <string key="level_complete" value="Lygis pereitas"/>
+        <string key="level_failed" value="Lygis nepereitas"/>
+        <string key="okay" value="Gerai"/>
+        <string key="swat_deaths" value="Mirė specialiųjų pajėgų"/>
+        <string key="civilian_deaths" value="Mirė civilių"/>
+        <string key="suspect_deaths" value="Mirė banditų"/>
+        <string key="change_difficulty" value="Keisti sunkumą"/>
+        <string key="spy_deaths" value="Mirė šnipų"/>
+
+
+        <!-- Gameplay -->
+        <string key="choose_where_to_throw" value="Pasirinkite, kur mesti"/>
+        <string key="flash_grenade" value="Apšviečiamoji granata"/>
+        <string key="smoke_grenade" value="Dūminė granata"/>
+        <string key="stun_grenade" value="Svaiginančioji granata"/>
+        <string key="check_spot" value="Tikrinti vietą"/>
+        <string key="remove_blocker" value="Šalinti blokatorių"/>
+        <string key="sho_grenade" value="Šo granata"/>
+        <string key="feather_grenade" value="Kutenančioji granata"/>
+        <string key="press_button" value="Spustelėkite mygtuką"/>
+        <string key="tap_cell" value="Bakstelėkite ant langelio"/>
+        <string key="wait" value="Palaukti"/>
+        <string key="slime_grenade" value="Lipnioji granata"/>
+        <string key="lightning_grenade" value="Žaibinė granata"/>
+        <string key="draft_grenade" value="Skersvėjo granata"/>
+        <string key="mask_grenade" value="Kaukės granata"/>
+        <string key="scarecrow_grenade" value="Baidyklės granata"/>
+        <string key="grenades" value="Granatos"/>
+        <string key="rocket_grenade" value="Raketinė granata"/>
+        <string key="wait_for_signal" value="Laukti signalo"/>
+        <string key="whole_team_selected" value="Pasirinkta visa komanda"/>
+        <string key="red_group_selected" value="Pasirinkta raudonoji grupė"/>
+        <string key="blue_group_selected" value="Pasirinkta mėlynoji grupė"/>
+        <string key="task" value="Užduotis"/>
+        <string key="task_vip_rescue" value="eskortuoti VIP'ą iki išėjimo"/>
+        <string key="vip" value="VIP'as"/>
+        <string key="spy" value="Šnipas"/>
+        <string key="task_interrogate_vip" value="apklausti VIP'ą ir išeiti"/>
+        <string key="interrogation" value="Apklausinėjimas"/>
+        <string key="get_to_the_exit" value="Pasiekite išėjimą"/>
+        <string key="task_defuse_suitcase" value="išminuoti lagaminą"/>
+        <string key="task_investigation" value="atlikti tyrimą"/>
+        <string key="microcontrol" value="Mikrovaldymas"/>
+        <string key="auto_detect" value="Aptikti automatiškai"/>
+        <string key="sight" value="Žvilgsnis"/>
+        <string key="throw_grenade" value="Mesti granatą"/>
+        <string key="open_door" value="Atidaryti duris"/>
+        <string key="throw_through_door" value="Mesti pro duris"/>
+        <string key="zombie_bugs" value="Vabalai-zombiai"/>
+
+
+        <!-- Touch modes -->
+        <string key="line_of_sight" value="Žiūrėjimo kryptis"/>
+        <string key="edit_walk_points" value="Ėjimo taškai"/>
+        <string key="floor_fill" value="Grindų užpildymas"/>
+        <string key="choose_area" value="Pasirinkite plotą"/>
+        <string key="choose_cell" value="Pasirinkite langelį"/>
+
+
+        <!-- Editor -->
+        <string key="create" value="Kurti"/>
+        <string key="import" value="Importuoti"/>
+        <string key="export" value="Eksportuoti"/>
+        <string key="delete" value="Naikinti"/>
+        <string key="remove" value="Šalinti"/>
+        <string key="weight" value="Svoris"/>
+        <string key="rename" value="Pervardyti"/>
+        <string key="quick_mode" value="Spartusis režimas"/>
+        <string key="exported" value="Eksportuota"/>
+        <string key="permissions" value="Leidimai"/>
+        <string key="unlimited" value="Neribota"/>
+        <string key="auto" value="Autom."/>
+        <string key="remove_layout" value="Šalinti išsidėstymą"/>
+        <string key="remove_objects" value="Šalinti objektus"/>
+        <string key="floor" value="Grindys"/>
+        <string key="walls" value="Sienos"/>
+        <string key="marks" value="Žymės"/>
+        <string key="doors" value="Durys"/>
+        <string key="rooms" value="Kambariai"/>
+        <string key="furniture" value="Baldai"/>
+        <string key="units" value="Vienetai"/>
+        <string key="lighting" value="Apšvietimas"/>
+        <string key="windows" value="Langai"/>
+        <string key="layout" value="Išsidėstymas"/>
+        <string key="full_generation" value="Pilna generacija"/>
+        <string key="scripts" value="Rašmenos"/>
+        <string key="quantity" value="Kiekis"/>
+        <string key="default" value="Pagal standartą"/>
+        <string key="all_groups" value="Visos grupės"/>
+        <string key="rotate" value="Pasukamos"/>
+        <string key="train" value="Traukinio"/>
+        <string key="generate_again" value="Generuoti dar kartą"/>
+        <string key="tap_again_to_confirm" value="Bakstelėkite darkart, kad patvirtinti"/>
+        <string key="exit_point" value="Išėjimas"/>
+        <string key="objects" value="Objektai"/>
+        <string key="fake_suitcase" value="Padirbtas lagaminas"/>
+        <string key="real_suitcase" value="Tikras lagaminas"/>
+        <string key="mafia_boss" value="Mafijos bosas"/>
+        <string key="evidence" value="Įrodymas"/>
+        <string key="box" value="Dėžė"/>
+        <string key="mimic" value="Mėgdžiotojas"/>
+
+
+        <!-- Settings -->
+        <string key="restart_app" value="Paleiskite žaidimą iš naujo"/>
+        <string key="lang" value="Kalba"/>
+        <string key="other" value="Kita"/>
+        <string key="main" value="Pagrindinis"/>
+        <string key="sound" value="Garsas"/>
+        <string key="full_screen" value="Visaekranis režimas"/>
+        <string key="settings" value="Nustatymai"/>
+        <string key="graphics" value="Grafika"/>
+        <string key="low" value="žema"/>
+        <string key="medium" value="vidutinė"/>
+        <string key="high" value="aukšta"/>
+        <string key="selection_panel" value="Pasirinkimų skydas"/>
+        <string key="start_paused" value="Pradėti lygį pauzėje"/>
+        <string key="transfer_progress" value="Perkelti progresą"/>
+
+
+        <!-- Campaign -->
+        <string key="t1_hello" value="Sveiki! Vodobanka yra paprastas žaidimas, kuriame jūs valdote specialiųjų pajėgų komandą. Pradėkime nuo žaidimo pagrindų išmokimo."/>
+        <string key="t1_basics" value="Jūs valdote savo komandą duodami nurodymus. Bakstelėkite ant langelio, kad duotumėte jiems nurodymą ten eiti."/>
+        <string key="t1_select_door" value="Šalia jūsų komandos galite matyti duris. Bakstelėkite ant bet kurio tamsaus langelio, kad jas pasirinktumėte."/>
+        <string key="t1_arrest" value="Žali vienetai yra civiliai, jie nėra pavojingi. Šis civilis pasidavė. Bakstelėkite ant jo, kad jį areštuotumėte."/>
+        <string key="t1_finish" value="Norėdami pereiti lygį, jums tereikia areštuoti visus civilius."/>
+        <string key="t2_hello" value="Šiame lygyje susidursite su banditais. Jie yra labai pavojingi, todėl nesuteikite jiems galimybės šaudyti į jūsų komandą."/>
+        <string key="t2_storm_flash" value="Norėdami teisingai išvalyti kambarį nuo priešų, galite duoti kelis nurodymus vienu metu. Leiskite man parodyti."/>
+        <string key="t2_finish" value="Pabandykite tą patį padaryti kituose kambariuose. Prieš įeidami į kambarį, naudokite apšviečiamąsias granatas."/>
+        <string key="t3_hello" value="Žaidimas pamažu atskleis visą prieinamą ginkluotę."/>
+        <string key="t3_grenades" value="Šis lygis pristato dar 2 rūšių granatas. Kiekviena granata turi savo paskirtį."/>
+        <string key="t4_hello" value="Kai kuriuose lygiuose jūsų užduotis skirsis. Pavyzdžiui, čia turite eskortuoti VIP'ą iki išėjimo."/>
+        <string key="t4_vip" value="VIP'as yra tas žmogus, kurio galva pažymėta „+“. Jis seks paskui jūsų komandą."/>
+        <string key="t4_exit" value="Išėjimas yra nedideliame kambaryje, šiaurėje."/>
+        <string key="t4_tactic" value="Jūs neturite pakankamai ginkluotės, kad išvalytumėte visą lygį. Stenkitės vengti kovų ir pabandykite nueiti iki išėjimo saugiai."/>
+        <string key="t5_hello" value="Banditai mėgsta klaidžioti po kambarius, todėl tai dažnai sukelia pavojingų situacijų. Norėdami jų išvengti, naudokite blokatorius."/>
+        <string key="t5_storm_block" value="Blokatoriai gali būti pastatyti šturmuojant. Tokiu būdu blokatorius bus pastatytas iškart po kambario išvalymo."/>
+        <string key="t5_finish" value="Stenkitės neįeiti į centrinį kambarį, kol likusieji kambariai nebus išvalyti. Taip pat statykite blokatorius ant durų, vedančių į jį."/>
+        <string key="t6_hello" value="Sunkumo lygį galima pasirinkti kampanijos ekrane."/>
+        <string key="t7_hello" value="Kartais kambariai nėra stačiakampio formos. Tokie kambariai yra pavojingesni."/>
+        <string key="t7_scout" value="Bet kuriame kambaryje galite atlikti žvalgybą, kad pamatytumėte, kas ten vyksta. Leiskite man parodyti."/>
+        <string key="t7_finish" value="Žvalgyba leidžia priimti geresnius sprendimus. Naudokitės ja sudėtingose situacijose."/>
+        <string key="t8_hello" value="Nuo šio lygio jūsų ginkluotės atsargos bus ribotos. Naudokitės jūsų turima ginkluote protingai."/>
+        <string key="t8_limits" value="Užuomina: nenaudokite vertingos ginkluotės lengvai užimamuose kambariuose. Bandykite planuoti savo veiksmus į priekį."/>
+        <string key="t9_hello" value="Jūsų užduotis yra apklausti VIP'ą, gauti iš jo informacijos ir pabėgti iš nusikaltimo vietos."/>
+        <string key="t9_killing" value="Šnipai paprastai stengiasi nepalikti liudytojų. Todėl jie gali nužudyti bet ką, įskaitant VIP'ą."/>
+        <string key="t9_attack" value="Sunkiausia yra išgyventi antpuolį po VIP'o apklausinėjimo. Naudokite blokatorius ir granatas, nes šie dalykai tikrai padės."/>
+        <string key="t10_window_block" value="Blokatorius galite statyti ir ant langų. Kartais tai yra naudinga."/>
+        <string key="t12_long_tap" value="Kai kuriuos dalykus galima atlikti tik su ilgu bakstelėjimu. Pavyzdžiui, galite paryškinti duris, vedančias į tas vietas, kur jau buvote."/>
+        <string key="t14_hello" value="Čia turėsite išminuoti lagaminą. Bakstelėjus ant lagamino, bus paskirta komanda, kuri jį išinuos."/>
+        <string key="t14_but" value="Bet tai nėra taip paprasta. Yra keli lagaminai ir tik vieną iš jų galima sėkmingai išminuoti, nes kiti lagaminai iškart sprogsta."/>
+        <string key="t14_hints" value="Areštuoti banditai parodys apytikslę lagamino, kurį galite sėkmingai išminuoti, vietą."/>
+        <string key="t18_hello" value="Šiame lygyje susidursite su mafijos bosu. Jis gali įspėti banditus apie jūsų buvimą."/>
+        <string key="t18_panic" value="Nužudžius ar areštavus mafijos bosą, tarp banditų prasidės sumaištis."/>
+        <string key="t24_hello" value="Šis lygis skiriasi nuo ankstesnių. Čia reikia atlikti tyrimą ir surasti tinkamą nusikaltėlį."/>
+        <string key="t24_clues" value="Jūs turite surinkti įkalčius. Jie suteikia svarbią informaciją. Norėdami juos surinkti, tiesiog ant jų bakstelėkite."/>
+        <string key="t24_undercover" value="Jūs valdote policininką po priedanga, todėl banditai į jus nešaudys."/>
+        <string key="t24_boss" value="Tačiau mafijos bosas gali pastebėti policininką ir pranešti kitiems, todėl verčiau jo vengti."/>
+        <string key="t24_win" value="Norėdami laimėti, tiesiog bakstelėkite ant bandito, atitinkančio visus įkalčius."/>
+        <string key="t91_more" value="Hm, reikia daugiau ginkluotės..."/>
+
+
+        <!-- Help -->
+        <string key="help" value="Pagalba"/>
+        <string key="index_" value="Pavadinimas"/>
+        <string key="topic_" value="# #"/>
+        <string key="desc_flash_grenade" value="Trumpam apakina visus vienetus."/>
+        <string key="desc_smoke_grenade" value="Išskiria dūmus, priverčiančius vienetus pasiduoti. Apimtis: 3x3."/>
+        <string key="desc_stun_grenade" value="Apsvaigina vienetus, stovinčius tam tikrame atstume. Apimtis: maždaug 5x5."/>
+        <string key="desc_sho_grenade" value="Priverčia visus vienetus pereiti į vieną vietą."/>
+        <string key="desc_feather_grenade" value="Kutena vienetus iki tol, kol jie pasiduoda. Banditai pradeda panikuoti ir bėgioti aplink lygį."/>
+        <string key="desc_slime_grenade" value="Užblokuoja visas duris matomoje vietoje. Šalia specialiųjų pajėgų esančios durys yra ignoruojamos."/>
+        <string key="desc_lightning_grenade" value="Pradeda grandininę apakinimo reakciją."/>
+        <string key="desc_draft_grenade" value="Pradeda šaudyti į visas kambario duris."/>
+        <string key="desc_mask_grenade" value="Šalia esančius banditus paverčia specialiosiomis pajėgomis ir atvirkščiai."/>
+        <string key="desc_scarecrow_grenade" value="Išbaido vienetus ir priverčia juos eiti į tolimiausią vietą kambaryje."/>
+        <string key="desc_rocket_grenade" value="Priverčia vienetus pasiduoti. Paveikia tik tuos vienetus, kurie yra pakankamai toli."/>
+        <string key="desc_check_spot" value="Specialiųjų pajėgų komanda šturmuojant kambarį apžiūrės šią vietą."/>
+        <string key="desc_wait_for_signal" value="Specialiųjų pajėgų komanda sustos ir lauks, kol žaidėjas bakstels mygtuką apatiniame dešiniajame kampe. Leidžia lengvai sinchronizuoti dvi komandas."/>
+        <string key="how_to_add_user_level" value="Jei norite pridėti savo lygį prie žaidėjų lygių sąrašo, atlikite šiuos veiksmus: #1. Padarykite jį redaktoriuje. #2. Įsitikinkite, kad jį įmanoma pereiti. #3. Patikrinkite apšvietimą, žymes, ginkluotės leidimus ir kitus dalykus. #4. Spustelėkite „Eksportuoti“. #5. Išsiųskite lygio kodą iš savo iškarpinės man el. paštu: yiotro93@gmail.com"/>
+        <string key="topic_progress_sync" value="Šis dalykas leidžia sinchronizuoti progresą tarp skirtingų žaidimo versijų.# #Tiesiog įveskite penkiaženklį numerį (progreso kodą) ir jūsų progresas bus atkurtas.# #Jūsų dabartinis progreso kodas yra numatytoji vertė. Kitame įrenginyje eikite į žaidimo nustatymus, atidarykite šį dalyką ir pamatysite kodą, kurį turite įvesti."/>
+
+
+        <!-- Statistics -->
+        <string key="statistics" value="Statistika"/>
+
+
+        <!-- Special thanks -->
+        <string key="special_thanks_title" value="Ypatinga padėka"/>
+        <string key="special_thanks_begin" value="Ypatinga padėka šiems žmonėms: #"/>
+        <string key="special_thanks_people_eng" value="Fix RU: Oles Radev #Fix TR: Egemen Yesilyurt"/>
+
+
+
+        <!-- Other -->
+        <string key="catched_exception" value="O ne, kažkas nutiko! # #Jei jums nesudėtinga, tada spustelėkite „Rodyti“, padarykite ekrano nuotrauką ir išsiųskite ją man el. paštu: yiotro93@gmail.com"/>
+        <string key="show_more" value="Rodyti"/>
+        <string key="ios_release" value="Dabar prieinama su iOS sistemomis"/>
+
+    </language>

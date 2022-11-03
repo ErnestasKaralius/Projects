@@ -1,0 +1,422 @@
+﻿
+    <language name="lt_LT" title="Lithuanian" author="Ernestas Karalius">
+        <!-- All characters -->
+        <string key="lang_characters" value="ąčęėįšųūžĄČĘĖĮŠŲŪŽ„“ö"/>
+
+        <!-- Main menu -->
+        <string key="main_menu_info" value="Informacija"/>
+        <string key="main_menu_exit" value="Išeiti"/>
+        <string key="main_menu_something" value="Baltas tekstas apie nieką"/>
+
+        <!-- Random stuff -->
+        <string key="menu_level" value="Lygis"/>
+        <string key="menu_reset" value="Atkurti"/>
+        <string key="game_saved" value="Žaidimas išsaugotas"/>
+        <string key="restart_app" value="Paleisti žaidimą iš naujo"/>
+        <string key="city_name_gen_masks" value="kama kakao kamao kakkao kakka amao amaka kamak kakaka kaakao akaka amakao"/> <!-- Same as english -->
+        <string key="city_name_gen_groups" value="k: r t p s d k b n m #m: rb kr tr br bn ko rt #a: o a ai e oi o e #o: vo va msk sk nsk rg ro"/> <!-- Same as english -->
+
+        <!-- Info -->
+        <string key="info_back" value="Atgal"/>
+        <string key="info_array" value="Tai yra paprastas minimalistinio stiliaus strateginis žaidimas.
+        #Jis yra nemokamas ir jame nėra reklamų ar pinigų aukojimų.
+        #Norėdami išmokti žaisti žaidimą, patariu praeiti apmokymą.
+        #
+        #Žaidimas įkvėptas Slay nuo Sean O'Connor
+        #
+        #
+        #
+        #
+        #
+        #Reddit: /r/yiotro_games
+        #El. paštas: yiotro93@gmail.com
+        #Žaidimą sukūrė yiotro
+        "/>
+        <string key="reset_campaign_data" value="Atkurti duomenis"/>
+        <string key="special_thanks" value="#Skin: ShroomArts #Music: Derek Bryant #Slimes: @DomCh1 #Skin: Jannes Peters #Fix PL: Aleksander Zarzynski #Fix FR: Sebastien Duperrier #Fix IT: Ivano Rocco #Fix RU: Oles Radev #Skin AWW: AFG, Timur #Fix CZ: Tadeas Hendrych #Fix NOR: Moon Moon #Katuri: Laurent Hien #Matveismi art: Matvej #Skin AWW 2: Timur "/> <!-- Same as english -->
+        <string key="special_thanks_title" value="Ypatinga padėka"/>
+        <string key="antiyoy_online" value="Pagaliau išleidau Antiyoy internetinę versiją ;) # #Dabar galite žaisti internete su kitais žmonėmis. Žaidėjų lygius galima įvertinti ir tuos įvertinimus matys kiti žaidėjai. Kalendoriaus režimas leidžia pereiti naujus lygius kiekvieną dieną. Tai galite rasti mano naujame žaidime Antiyoy Online. # #Mygtukas apačioje atidarys šio žaidimo puslapį Play parduotuvėje. Tikiuosi, kad jums patiks :)"/>
+        <string key="catched_exception" value="O ne, kažkas nutiko! # #Jei jums nesudėtinga, padarykite ekrano nuotrauką ir išsiųskite ją man el. paštu: yiotro93@gmail.com"/>
+
+        <!-- Choose game mode menu-->
+        <string key="choose_game_mode_skirmish" value="Mūšis"/>
+        <string key="choose_game_mode_tutorial" value="Apmokymas"/>
+        <string key="choose_game_mode_campaign" value="Kampanija"/>
+        <string key="choose_game_mode_load" value="Įkelti"/>
+        <string key="user_levels" value="Žaidėjų lygiai"/>
+
+        <!-- User levels -->
+        <string key="add_my_map" value="Pridėti lygį"/>
+        <string key="how_add_my_map" value="Kaip pridėti savo lygį: #1. Padarykite jį redaktoriuje. #2. Įsitikinkite, kad jis yra įdomus ir jį įmanoma pereiti. #3. Spustelėkite „Eksportuoti“. #4a. Paskelbkite jį pastebin.com arba išsiųskite nuorodą man el. paštu: yiotro93@gmail.com #4b. Taip pat jį galite paskelbti mano Reddit puslapyje: /r/yiotro_games # #Beje, jei lygis yra per sudėtingas, geriau prie jo pridėkite vaizdo įrašą su jo perėjimu."/>
+
+        <!-- Skirmish menu -->
+        <string key="game_settings_main_menu" value="Atgal"/>
+        <string key="game_settings_tutorial" value="Apmokymas"/>
+        <string key="game_settings_start" value="Pradėti"/>
+        <string key="map_size" value="Žemėlapio dydis"/>
+        <string key="color_number" value="Spalvos"/>
+        <string key="player_number" value="Žaidėjai"/>
+        <string key="small" value="mažas"/>
+        <string key="medium" value="vidutinis"/>
+        <string key="big" value="didelis"/>
+        <string key="huge" value="didžiulis"/>
+        <string key="ai_only" value="robotų mūšis"/>
+        <string key="single_player" value="vienas žaidėjas"/>
+        <string key="multiplayer" value="keli žaidėjai"/>
+        <string key="colors" value="spalvos"/>
+        <string key="color" value="spalvos"/>
+        <string key="difficulty" value="Sunkumas"/>
+        <string key="easy" value="lengvas"/>
+        <string key="normal" value="normalus"/>
+        <string key="hard" value="sunkus"/>
+        <string key="expert" value="ekspertas"/>
+        <string key="balancer" value="taktikas"/>
+        <string key="player_color" value="Žaidėjo spalva"/>
+        <string key="fog_of_war" value="Karo rūkas"/>
+        <string key="diplomacy" value="Diplomatija"/>
+        <string key="provinces" value="Provincijos"/>
+        <string key="default" value="pagal standartą"/>
+        <string key="master" value="meistras"/>
+
+        <!-- In game menu -->
+        <string key="in_game_menu_resume" value="Tęsti"/>
+        <string key="in_game_menu_save" value="Išsaugoti"/>
+        <string key="in_game_menu_surrender" value="Pasiduoti"/>
+        <string key="in_game_menu_main_menu" value="Pagrindinis meniu"/>
+        <string key="in_game_menu_restart" value="Pradėti iš naujo"/>
+        <string key="confirm_restart" value="Tikrai pradėti iš naujo?"/>
+        <string key="cancel" value="Atšaukti"/>
+        <string key="confirm_end_turn" value="Baigti ėjimą?"/>
+        <string key="yes" value="Taip"/>
+
+        <!-- End game menu -->
+        <string key="end_game_ok" value="Gerai"/>
+        <string key="end_game_okay" value="Gerai"/>
+        <string key="player" value="žaidėjas"/>
+        <string key="ai" value="DI"/>
+        <string key="won" value="laimėjo"/>
+        <string key="statistics" value="Statistika"/>
+        <string key="next" value="Toliau"/>
+        <string key="level_complete" value="Lygis pereitas"/>
+        <string key="win_game" value="Pereiti"/>
+        <string key="win_or_continue" value="Laimėti#ar tęsti?"/>
+        <string key="continue" value="Tęsti"/>
+        <string key="winner" value="Nugalėtojas"/>
+
+        <!-- Tutorial -->
+        <string key="normal_rules" value="Įprastos taisyklės"/>
+        <string key="how_to_play" value="Kaip žaisti?"/>
+        <string key="tutorial_ok" value="Gerai"/>
+        <string key="tut_select_unit" value="Pasirinkite vienetą"/>
+        <string key="tut_tap_on_hex" value="Bakstelėkite ant provincijos"/>
+        <string key="tut_press_button" value="Dukart spustelėkite mygtuką"/>
+        <string key="tut_build_tower" value="Pastatykite bokštą"/>
+        <string key="tut_again" value="Dar kartą"/>
+        <string key="tut_build_spearman" value="Pastatykite ietininką"/>
+        <string key="tut_tap_to_undo" value="Bakstelėkite „atšaukti“"/>
+        <string key="tut_tap_to_end_turn" value="Bakstelėkite „baigti ėjimą“"/>
+        <string key="tut_hold_hex" value="Bakstelėkite ir laikykite"/>
+        <string key="tut_merge_units" value="Sujunkite vienetus"/>
+        <string key="tut_good_luck" value="Sėkmės!"/>
+
+        <!-- Tutorial tips -->
+        <string key="tip_capture_with_units" value="Pulkite su savo vienetais,#kad užimtumėte teritorijas."/>
+        <string key="tip_about_money" value="Kuo didesnė jūsų teritorija, tuo#daugiau gausite pinigų."/>
+        <string key="tip_build_towers" value="Statykite bokštus, kad#apsaugotumėte gretimas provincijas."/>
+        <string key="tip_about_taxes" value="Stipresni vienetai naudoja daugiau pinigų."/>
+        <string key="tip_about_defense" value="Vienetai ir namai taip pat#apsaugo gretimas provincijas."/>
+        <string key="tip_hold_to_march" value="Norėdami greitai perkelti vienetus,#bakstelkite ir laikykite."/>
+        <string key="tip_about_unit_death" value="Jei pinigai baigsis,#visi jūsų vienetai žus.#Tad būkite atsargūs."/>
+        <string key="tip_merging" value="Sujunkite vienetus, kad#gautumėte daug stipresnius."/>
+        <string key="tip_trees" value="Medžiai mažina pajamas.#Verčiau juos iškirsti."/>
+        <string key="tip_help" value="Norėdami praleisti apmokymą,#spustelėkite „Pagalba“."/>
+
+        <!-- Generic Tutorial -->
+        <string key="gen_greetings" value="Sveiki! Šis apmokymas paaiškins pagrindines žaidimo taisykles."/>
+        <string key="gen_select_province" value="Bakstelėkite ant savo miesto, kad jį pasirinktumėte."/>
+        <string key="gen_select_unit" value="Puiku! Jūs turite keletą vienetų. Bakstelėkite ant vieno iš jų."/>
+        <string key="gen_move_unit" value="Kiekvienas vienetas eina kartą per ėjimą. Užimkite niekieno žemę bakstelėdami ant šalia pasirinkto vieneto esančios provincijos."/>
+        <string key="gen_income" value="Užėmę naują provinciją, padidinote savo miesto pajamas. Daugiau provincijų - daugiau pajamų."/>
+        <string key="gen_lets_build_farm" value="Pastatykime fermą, kad padidintumėme pajamas."/>
+        <string key="gen_press_button_twice" value="Dukart spustelėkite mygtuką"/>
+        <string key="gen_build_farm" value="Fermas galima statyti tik netoli miestų ar kitų fermų."/>
+        <string key="gen_about_farms" value="Kiekviena ferma per ėjimą duoda 4 monetas. Kiekviena nauja ferma yra brangesnė nei ankstesnė."/>
+        <string key="gen_lets_build_peasant" value="Pastatykime naują vienetą ir iškart užimkime niekieno žemę."/>
+        <string key="gen_press_button" value="Spustelėkite žemiau esantį mygtuką"/>
+        <string key="gen_build_peasant" value="Pastatykite naują vienetą šalia miesto sienos."/>
+        <string key="gen_capture_peasant" value="Dabar užimkite niekieno žemę pasirinkdami vienetą ir nurodydami, kur eiti."/>
+        <string key="gen_capture_hex" value="Užimkite provinciją"/>
+        <string key="gen_lets_build_tower" value="Jūsų žemes reikia saugoti. Tam puikiai tinka bokštai."/>
+        <string key="gen_build_tower" value="Pastatykite bokštą bakstelėdami ant nurodytos provincijos"/>
+        <string key="gen_about_towers" value="Bokštai apsaugo gretimas provincijas nuo valstiečių ir ietininkų."/>
+        <string key="gen_lets_build_spearman" value="Ietininkas yra stipresnis už bet kurį valstietį. Pastatykime jį."/>
+        <string key="gen_build_spearman" value="Bakstelėkite ant provincijos, kad pastatytumėte ietininką."/>
+        <string key="gen_units_consume_money" value="Vienetai naudoja pinigus pragyvenimui. Stipresni vienetai naudoja daugiau pinigų."/>
+        <string key="gen_undo_spearman" value="Dabar miesto pelnas yra -1. Tai yra blogai, todėl atšaukime ietininko statybą."/>
+        <string key="gen_why_units_die" value="Jei miestui pritrūks pinigų, visi vienetai žus. Todėl turite įsitikinti, kad pelnas yra didesnis už nulį."/>
+        <string key="gen_about_trees_one" value="Medžiai yra taip pat pavojingi. Provincijos, kuriuose auga medžiai, neduoda pinigų."/>
+        <string key="gen_about_trees_two" value="Geriausiai medžius iškirsti iš karto, kol jų yra nedaug."/>
+        <string key="gen_end_turn" value="Norėdami baigti ėjimą, spustelėkite mygtuką apatiniame dešiniajame kampe."/>
+        <string key="gen_choose_to_merge" value="Vienetai taip pat gali būti sujungti. Pasirinkite apačioje esantį valstietį."/>
+        <string key="gen_merge_units" value="Dabar, kai pasirinkote valstietį, spustelėkite ant viršuje esančio valstiečio, kad juos sujungtumėte."/>
+        <string key="gen_long_tap" value="Jei turite per daug vienetų, juos visus galite perkelti su ilgu bakstelėjimu."/>
+        <string key="gen_several_provinces" value="Gali būti keli miestai, turintys atskirą ekonomiką."/>
+
+        <!-- Tutorial help -->
+        <string key="help" value="Pagalba"/>
+        <string key="help_about_units" value="Vienetai"/>
+        <string key="help_about_trees" value="Medžiai"/>
+        <string key="help_about_towers" value="Bokštai"/>
+        <string key="help_about_money" value="Pinigai"/>
+        <string key="help_about_tactics" value="Taktikos"/>
+        <string key="help_about_rules" value="Taisyklės"/>
+        <string key="my_games" value="Mano žaidimai"/>
+
+        <string key="help_units_article" value="Yra 4 rūšių vienetai. 
+        #Jie skiriasi tik stiprumu. 
+        #Didėjančio stiprumo tvarka:
+        #[1] valstiečiai
+        #[2] ietininkai
+        #[3] baronai
+        #[4] riteriai
+        #
+        #Vienetas suteikia gretimoms provincijoms apsaugą, lygią jo stiprumui.
+        #
+        #Norėdami užimti provinciją, vieneto stiprumas turi būti didesnis nei provincijos gynyba.
+        #
+        #Kiekvienas vienetas sunaudoja 2, 6, 18 ar 54 monetas per ėjimą.
+        "/>
+
+        <string key="help_trees_article" value="Medžiai užauga žuvus vienetams.
+        #
+        #Provincija su medžiu neduoda pajamų. Reiškia, kad medžiai daro žalą.
+        #
+        #Turite juos iškirsti, kitaip jie išplis ir sukels ekonominę krizę.
+        #
+        #Palmės auga kraštuose ir labai greitai plinta. Jos turi būti kuo greičiau iškirstos.
+        "/>
+
+        <string key="help_towers_article" value="Bokštai yra skirti gretimoms provincijoms apsaugoti.
+        #
+        #Bokštai suteikia apsaugą 2. Juos gali nugalėti tik baronai ir riteriai.
+        #
+        #Namai suteikia apsaugą 1.
+        #
+        #Žaidimo pradžioje tai yra geriausia gynyba.
+        #Jų kaina yra mažesnė už ietininkų ir nenaudoja pinigų.
+        "/>
+
+        <string key="help_money_article" value="Pajamos priklauso nuo provincijų skaičiaus. 
+        #Kuo didesnė teritorija, tuo didesnės pajamos. 
+        #Medžiai mažina pajamas.
+        #
+        #Vienetai naudoja pinigus. Stipresni vienetai naudoja daugiau pinigų.
+        #
+        #Jei pinigai baigiasi, visi vienetai žūsta.
+        #
+        #Pajamos yra rodomos centrinėje viršutinėje ekrano dalyje.
+        "/>
+
+        <string key="help_tactics_article" value="Žaidimo pradžioje svarbu užimti niekieno provincijas. 
+        #Po to reikia ginti savo provincijas.
+        #
+        #Prieš statydami stiprius vienetus, turite įsitikinti, kad jūsų pelnas yra pakankamai geras.
+        #
+        #Supjaustykite priešų teritorijas į gabalus, kad sužlugdytumėte jų ekonomiką.
+        "/>
+
+        <string key="article_rules" value="Žaidime yra 2 taisyklių rinkiniai: įprastos ir slay taisyklės. Įprastos taisyklės yra numatytosios.
+        #
+        #Iš pradžių žaidime buvo tik slay taisyklės, todėl tik jos yra aprašytos.
+        #
+        #Norėdami pakeisti taisykles mūšio režime, turite bakstelėti „Daugiau“ prieš pradėdami žaidimą.
+        #
+        #Norėdami pakeisti kampanijos taisykles, lygio pasirinkimo ekrane bakstelėkite „...“ viršutiniame dešiniajame kampe."/>
+        <string key="article_diplomacy_1" value="Norėdami laimėti naudodamiesi diplomatija, turite būti draugais su visomis valstybėmis.
+        #
+        #Norėdami atidaryti diplomatijos sąsają, tereikia pasirinkti savo valstybę ir bakstelėti ant mažos vėliavos piktogramos.
+        #
+        #Bakstelėkite ant bet kurios valstybės sąraše ir pamatysite, kokių veiksmų galite imtis.
+        #
+        #„Nykščio aukštyn“ ir „nykščio žemyn“ mygtukai gali pagerinti arba pabloginti santykius."/>
+
+        <string key="article_diplomacy_2" value="Juodosios žymės idėja yra labai paprasta: bet kuri kita valstybė negali būti jūsų abiejų draugė tuo pačiu metu. Tai yra kažkas panašaus į diplomatinį spaudimą.
+        #
+        #Beje, pergalė nebus lengva. Paskutinė valstybė visada atsisako draugystės."/>
+
+        <string key="article_my_games" value="Jei jums patiko šis žaidimas, tada galbūt patiks ir kai kurie kiti mano žaidimai:"/>
+
+        <!-- Statistics -->
+        <string key="turns_made" value="Ėjimai"/>
+        <string key="units_died" value="Žuvo vienetų"/>
+        <string key="units_produced" value="Pastatyta vienetų"/>
+        <string key="money_spent" value="Išleista pinigų"/>
+        <string key="time" value="Laikas"/>
+        <string key="wins" value="Pergalės"/>
+        <string key="hours_abbreviation" value="val."/>
+        <string key="minutes_abbreviation" value="min."/>
+        <string key="seconds_abbreviation" value="sek."/>
+        <string key="friendships_broken" value="Nutrūko draugysčių"/>
+
+        <!-- Editor -->
+        <string key="editor" value="Redaktorius"/>
+        <string key="slot" value="Išsaugojimas"/>
+        <string key="slots" value="Išsaugojimai"/>
+        <string key="import" value="Importuoti"/>
+        <string key="export" value="Eksportuoti"/>
+        <string key="empty" value="tuščia"/>
+        <string key="play" value="Žaisti"/>
+        <string key="edit" value="Redaguoti"/>
+        <string key="random" value="Atsitiktinai"/>
+        <string key="exported" value="Lygis iškarpinėje"/>
+        <string key="editor_clear" value="Valyti"/>
+        <string key="no" value="Ne"/>
+        <string key="yes" value="Taip"/>
+        <string key="confirm_import" value="Patvirtinkite importavimą"/>
+        <string key="filter_no" value="Be filtro"/>
+        <string key="filter_only_land" value="Tik žemė"/>
+        <string key="confirm_clear_level" value="Valyti žemėlapį?"/>
+        <string key="confirm_randomize" value="Generuoti atsitiktinį žemėlapį?"/>
+        <string key="randomize" value="Atsitiktinis žemėlapis"/>
+        <string key="create" value="Kurti"/>
+        <string key="change" value="Keisti"/>
+        <string key="messages" value="Pranešimai"/>
+        <string key="goal" value="Užduotis"/>
+        <string key="destroy_everyone" value="Sunaikinti visus"/>
+        <string key="diplomatic_victory" value="Diplomatinė pergalė"/>
+        <string key="survive_long_enough" value="Išgyventi pakankamai ilgai"/>
+        <string key="destroy_target_kingdom" value="Sunaikinti valstybę"/>
+        <string key="reach_target_income" value="Pasiekti pajamų tikslą"/>
+        <string key="ensure_target_victory" value="Atiduoti pergalę"/>
+        <string key="lock_relations" value="Blokuoti santykius"/>
+
+        <!-- Settings -->
+        <string key="autosave" value="Automatinis išsaugojimas"/>
+        <string key="long_tap_to_end_turn" value="Spustelėjimas ėjimo baigimui"/>
+        <string key="city_names" value="Miestų pavadinimai"/>
+        <string key="sound" value="Garsas"/>
+        <string key="limited_turns" value="Ėjimų riba"/>
+        <string key="original" value="Originalus"/>
+        <string key="points" value="Taškai"/>
+        <string key="grid" value="Tinklelis"/>
+        <string key="skin_shroomarts" value="ShroomArts"/>  <!-- Same as english -->
+        <string key="hold_to_march" value="Ilgas bakstelėjimas"/>
+        <string key="skin" value="Stilius"/>
+        <string key="anim_style" value="Jautrumas"/>
+        <string key="more" value="Daugiau"/>
+        <string key="camera_offset" value="Kameros poslinkis"/>
+        <string key="slay_rules" value="Slay taisyklės"/>
+        <string key="language" value="Kalba"/>
+        <string key="more_settings_checks" value="# #Vandens tekstūra # # "/>
+        <string key="water_texture" value="Vandens tekstūra"/>
+        <string key="confirm_reset" value="Atkurti progresą?"/>
+        <string key="replays" value="Įrašai"/>
+        <string key="save_replay" value="Išsaugoti įrašą"/>
+        <string key="replay" value="Įrašas"/>
+        <string key="replay_saved" value="Įrašas išsaugotas"/>
+        <string key="fast_construction" value="Statybos skydas"/>
+        <string key="music" value="Muzika"/>
+        <string key="left_handed" value="Kairiarankio režimas"/>
+        <string key="full_screen_mode" value="Visas ekranas"/>
+        <string key="system_keyboard" value="Sistemos klaviatūra"/>
+        <string key="use_list" value="Naudoti sąrašą"/>
+        <string key="automatic_transition" value="Automatinis perėjimas"/>
+
+        <!-- Skins -->
+        <string key="slimes" value="Slimes"/>  <!-- Same as english -->
+        <string key="jannes_peters" value="Jannes Peters"/>  <!-- Same as english -->
+        <string key="world_war" value="AWW"/>  <!-- Same as english -->
+        <string key="katuri" value="Katuri"/>  <!-- Same as english -->
+        <string key="matveismi_art" value="Matveismi art"/>  <!-- Same as english -->
+        <string key="aww2" value="AWW 2"/>  <!-- Same as english -->
+
+        <!-- Single messages -->
+        <string key="level_24" value="Tai yra pirmasis „sunkus“ lygis. Skirkite daugiau dėmesio gynybai."/>
+        <string key="map_too_big_for_user_levels" value="Žemėlapis sėkmingai eksportuotas. Jei norite jį išsiųsti kaip žaidėjų lygį, sumažinkite jį."/>
+        <string key="available_on_ios" value="Dabar prieinama su iOS sistemomis"/>
+
+        <!-- Gameplay -->
+        <string key="friends" value="Draugai"/>
+        <string key="mutual_friends" value="Bendri"/>
+        <string key="dotations" value="Dotacijos"/>
+        <string key="treaty_of_friendship" value="Draugystės sutartis"/>
+        <string key="state" value="Valstybė"/>
+        <string key="duration" value="Galiojimo laikas"/>
+        <string key="refuse_friendship" value="Deja, negaliu priimti jūsų draugystės pasiūlymo."/>
+        <string key="friend" value="draugas"/>
+        <string key="enemy" value="priešas"/>
+        <string key="neutral" value="neutralus"/>
+        <string key="dead" value="miręs"/>
+        <string key="confirm_cancel_friendship" value="Atšaukti draugystę?"/>
+        <string key="confirm_start_war" value="Pradėti karą?"/>
+        <string key="peace_treaty" value="Taikos sutartis"/>
+        <string key="pay" value="Išmoka"/>
+        <string key="reparations" value="Reparacijos"/>
+        <string key="refuse_stop_war" value="Aš kovosiu iki galo!"/>
+        <string key="win_conditions" value="Pergalės sąlygos"/>
+        <string key="diplomatic_win_conditions" value="Norėdami laimėti naudodamiesi diplomatija, turite būti draugais su visomis valstybėmis."/>
+        <string key="confirm_black_mark" value="Uždėti juodąją žymę?"/>
+        <string key="black_mark_description" value="Uždėję juodąją žymę, draudžiate kitiems draugauti su jumis abiem tuo pačiu metu. Tai neturi įtakos jau sudarytoms sutartims."/>
+        <string key="player_turn" value="Žaidėjo ėjimas"/>
+        <string key="fine" value="Bauda"/>
+        <string key="log" value="Laiškai"/>
+        <string key="friendship_proposal" value="Draugystės pasiūlymas"/>
+        <string key="war_declaration" value="Karo paskelbimas"/>
+        <string key="stop_war" value="Karo pabaiga"/>
+        <string key="friendship_ended" value="Draugystė baigėsi"/>
+        <string key="friendship_canceled" value="Draugystė atšaukta"/>
+        <string key="black_marked" value="Juodoji žymė"/>
+        <string key="letter_sent" value="Laiškas išsiųstas"/>
+        <string key="delete" value="Naikinti"/>
+        <string key="rename" value="Pervardyti"/>
+        <string key="confirm_delete_slot" value="Naikinti išsaugojimą?"/>
+        <string key="resume_button" value="Mygtukas „Tęsti“"/>
+        <string key="filters" value="Filtrai"/>
+        <string key="completed" value="Pereiti"/>
+        <string key="historical" value="Istoriniai"/>
+        <string key="temp_slot" value="Laikinasis išsaugojimas"/>
+        <string key="can_skip_level" value="Lygį galima praleisti"/>
+        <string key="reason" value="Priežastis"/>
+        <string key="friends_with_everybody" value="draugystė su visomis valstybėmis"/>
+        <string key="hex_purchase" value="Provincijų pirkimas"/>
+        <string key="confirm_buy_hexes" value="Pirkti provincijas?"/>
+        <string key="price" value="Kaina"/>
+        <string key="gift" value="Dovana"/>
+        <string key="gift_received" value="Gavote dovaną"/>
+        <string key="confirm_sell_hexes" value="Parduoti provincijas?"/>
+        <string key="confirm_skip_level" value="Praleisti lygį?"/>
+        <string key="ok" value="Taip"/>
+        <string key="money" value="Pinigai"/>
+        <string key="quantity" value="Kiekis"/>
+        <string key="income" value="Pajamos"/>
+        <string key="by_name" value="Pagal pavadinimą"/>
+        <string key="hex_trade" value="Prekyba provincijomis"/>
+        <string key="hex_sale" value="Provincijų pardavimas"/>
+        <string key="buyer_not_enough_money" value="Pirkėjas neturi pakankamai pinigų"/>
+        <string key="message" value="Pranešimas"/>
+        <string key="show" value="Rodyti"/>
+        <string key="check_filters" value="Patikrinkite filtrus"/>
+        <string key="lands" value="Žemės"/>
+        <string key="farms" value="Fermos"/>
+        <string key="units" value="Vienetai"/>
+        <string key="trees" value="Medžiai"/>
+        <string key="towers" value="Bokštai"/>
+        <string key="profit" value="Pelnas"/>
+        <string key="aggressor" value="Agresorius"/>
+        <string key="target" value="Taikinys"/>
+        <string key="choose" value="Pasirinkite"/>
+        <string key="attack_proposition" value="Puolimo pasiūlymas"/>
+        <string key="nothing" value="Nieko"/>
+        <string key="friendship" value="Draugystė"/>
+        <string key="remove_black_mark" value="Pašalinti juodąją žymę"/>
+        <string key="refuse_offer" value="Deja, aš negaliu priimti jūsų pasiūlymo."/>
+        <string key="accept" value="Priimti"/>
+        <string key="refuse" value="Atmesti"/>
+        <string key="what_you_get" value="Čia parodyta, ką gaunate"/>
+        <string key="what_you_give" value="O čia, ką atiduosite mainais"/>
+        <string key="hidden" value="Paslėpti"/> <!-- plural -->
+        <string key="hide" value="Slėpti"/>
+        <string key="debt" value="Skola"/>
+        <string key="some_units_can_move" value="Kai kurie vienetai dar gali judėti"/>
+
+    </language>

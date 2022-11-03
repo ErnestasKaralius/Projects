@@ -1,0 +1,548 @@
+    
+    <language name="lt_LT" title="Lithuanian" author="Ernestas Karalius">
+        <!-- Special characters -->
+        <string key="lang_characters" value= "ĄąČčĘęĖėĮįŠšŲųŪūŽž„“"/>
+
+        <!-- Info -->
+        <string key="about_game_article" value="Antiyoy Online yra paprastas internetinis žaidimas. Taisyklės yra beveik tokios pačios kaip ir originaliame žaidime, tačiau diplomatija veikia visiškai kitaip. Be to, šis žaidimas buvo įkvėptas Slay nuo Sean O'Connor.# #El. paštas: yiotro93@gmail.com #Reddit: /r/yiotro_games #Žaidimą sukūrė yiotro"/>
+        <string key="antiyoy_hd" value="Antiyoy HD yra mano seno žaidimo Antiyoy perdirbinys. Sąsaja, garsai ir animacijos buvo patobulintos. Taip pat buvo pridėta naujų funkcijų (pvz., kalendoriaus režimas). Taisyklės yra beveik tokios pačios kaip ir originaliame žaidime, tačiau diplomatija veikia visiškai kitaip. Be to, šis žaidimas buvo įkvėptas Slay nuo Sean O'Connor.# #El. paštas: yiotro93@gmail.com #Reddit: /r/yiotro_games #Žaidimą sukūrė yiotro"/>
+        <string key="secret_screen_text" value="Oho! Tai yra slaptasis ekranas."/>
+        <string key="privacy_policy_tldr" value="Šis žaidimas naudoja Google naudotojo vardą kaip pravardę ir Google ID jūsų atpažinimui."/>
+        <string key="do_you_agree" value="Ar sutinkate?"/>
+        <string key="i_agree" value="Sutinku"/>
+        <string key="privacy_policy" value="Privatumo politika"/>
+        <string key="about_game" value="Apie žaidimą"/>
+        <string key="online_disclaimer" value="Tikri žaidėjai yra pavojingesni už DI :O# #Prasminga iš pradžių pereiti kampaniją, kad pajaustumėte žaidimo taisykles, ir žaidėjų lygius - kai kurie iš jų yra itin įdomūs ;)"/>
+        <string key="new_game" value="Naujas žaidimas"/>
+        <string key="shproty_release" value="Sveiki! #Išleidau naują žaidimą pavadinimu Shproty. Tai yra paprastas, bet įdomus galvosūkių žaidimas. Apačioje esantis mygtukas atidarys žaidimo puslapį Play parduotuvėje. Tikiuosi, kad jums patiks :)"/>
+
+        <!-- Choose game mode menu-->
+        <string key="skirmish" value="Mūšis"/>
+        <string key="training" value="Treniruotė"/>
+        <string key="load" value="Įkelti"/>
+        <string key="editor" value="Redaktorius"/>
+        <string key="user_levels" value="Žaidėjų lygiai"/>
+        <string key="replays" value="Įrašai"/>
+        <string key="quick_match" value="Spartusis mačas"/>
+        <string key="content" value="Turinys"/>
+        <string key="campaign" value="Kampanija"/>
+        <string key="online_match" value="Mačas tinkle"/>
+        <string key="duel" value="Dvikova"/>
+
+
+        <!-- Skirmish -->
+        <string key="start" value="Pradėti"/>
+        <string key="level_size" value="Lygio dydis"/>
+        <string key="tiny" value="mažytis"/>
+        <string key="small" value="mažas"/>
+        <string key="normal" value="normalus"/>
+        <string key="big" value="didelis"/>
+        <string key="random" value="Atsitiktinai"/>
+        <string key="players" value="Žaidėjai"/>
+        <string key="player" value="Žaidėjas"/>
+        <string key="human" value="žmogus"/>
+        <string key="robot" value="DI"/>
+        <string key="classic_rules" value="Klasikinės taisyklės"/>
+        <string key="diplomacy" value="Diplomatija"/>
+        <string key="large" value="didžiulis"/>   <!-- map size -->
+        <string key="difficulty" value="Sunkumas"/>
+        <string key="easy" value="Lengvas"/>
+        <string key="average" value="Vidutinis"/>
+        <string key="hard" value="Sunkus"/>
+        <string key="expert" value="Ekspertas"/>
+        <string key="balancer" value="Taktikas"/>
+        <string key="normal_rules" value="Įprastos taisyklės"/>
+        <string key="experimental_rules" value="Eksperimentinės taisyklės"/>
+        <string key="normal_rules_description" value="Įprastos taisyklės yra naudojamos kaip numatytosios daugumoje žaidimo režimų."/>
+        <string key="classic_rules_description" value="Klasikinės taisyklės: negalite statyti fermų ir stipresnių bokštų, nėra niekieno žemių. Riteriai naudoja daugiau pinigų ir negali sunaikinti kitų riterių. Negaunate pinigų už medžių iškirtimą."/>
+        <string key="experimental_rules_description" value="Eksperimentinės taisyklės yra reikalingos bandymams. Tikėtina, kad jos dažnai keisis. Sėkmingi taisyklių variantai bus išsaugoti kaip naujos taisyklės."/>
+        <string key="giant" value="Milžiniškas"/>   <!-- map size -->
+        <string key="giant_landscape" value="Milžiniškas (gulsčias)"/>   <!-- map size -->
+        <string key="fog_of_war" value="Karo rūkas"/>
+        <string key="fog" value="Rūkas"/>
+        <string key="duel_rules" value="Dvikovos taisyklės"/>
+        <string key="duel_rules_description" value="Dvikovos taisyklės skiriasi nuo įprastų tuo, kad vienetus galite statyti tik savo teritorijoje arba netoli savo miesto/fermos. Pastatytas vienetas galės eiti tik kitą ėjimą."/>
+
+
+        <!-- Net -->
+        <string key="searching_for_match" value="Ieškomas mačas"/>
+        <string key="server_not_responding" value="Serveris tyli"/>
+        <string key="kicked" value="Buvote išmesti"/>
+        <string key="reason" value="Priežastis"/>
+        <string key="update" value="Naujinti"/>
+        <string key="your_turn" value="Jūsų eilė"/>
+        <string key="ai" value="DI"/>
+        <string key="spectate" value="Stebėti"/>
+        <string key="announce_shut_down" value="Serveris bus paleistas iš naujo po [time]. # #Paprastai tai reiškia, kad yra prieinamas naujinimas."/>
+        <string key="server_shut_down" value="Serveris buvo išjungtas"/>
+        <string key="authorization_in_process" value="Autorizavimas..."/>
+        <string key="guest" value="Svečias"/>
+        <string key="failed_to_login" value="Nepavyko prisijungti"/>
+        <string key="choose_nickname" value="Pasirinkite pravardę"/>
+        <string key="confirm_check_in_nickname" value="Tikrai norite būti [name]? #Savo pravardę galėsite pakeisti vėliau."/>
+        <string key="creating_account" value="Kuriama paskyra"/>
+        <string key="sign_out" value="Atsijungti"/>
+        <string key="you_signed_out" value="Sėkmingai atsijungėte. Kitą kartą galėsite prisijungti kitaip."/>
+        <string key="quit" value="Išeiti"/>
+        <string key="time" value="Laikas"/>
+        <string key="ping" value="Delsa"/>
+        <string key="double_login" value="Dvigubas prisijungimas"/>
+        <string key="moderator" value="Moderatorius"/>
+        <string key="admin" value="Administratorius"/>
+        <string key="usual_player" value="Paprastas žaidėjas"/>
+        <string key="return_to_match_verb" value="Grįžti į mačą"/>
+        <string key="return_to_match_noun" value="Grįžimas į mačą"/>
+        <string key="match_will_be_restored" value="Dabartinis mačas bus atkurtas po paleidimo iš naujo."/>
+        <string key="alternative_update" value="Jei naujinimas nėra prieinamas Play parduotuvėje, jį galite atsisiųsti tiesiai iš Google disko."/>
+        <string key="searching_for_rivals" value="Ieškomi varžovai"/>
+        <string key="match_cancelled" value="Mačas atšauktas"/>
+        <string key="rivals_found" value="Varžovai rasti"/>
+        <string key="offline_mode_enabled" value="Atjungties režimas įjungtas"/>
+        <string key="check_renaming" value="Tikrinti pervardymą"/>
+        <string key="renaming" value="Pervardymai"/>   <!-- plural -->
+        <string key="new_nickname" value="Nauja pravardė"/>
+        <string key="rename_to" value="Pervardyti į"/>
+        <string key="rename_request_sent" value="Pervardymo užklausa išsiųsta"/>
+        <string key="recent_match_finished" value="Pastaras mačas baigtas"/>
+        <string key="ratings" value="Reitingai"/>
+        <string key="next_fish_in" value="Kita žuvis po [time]"/>
+        <string key="searching_for_duel" value="Ieškoma dvikova"/>
+        <string key="use_password_for_custom_map" value="Naudokite slaptažodį kartu su tinkintu žemėlapiu"/>
+
+
+        <!-- User levels -->
+        <string key="moderator_panel" value="Moderatoriaus skydas"/>
+        <string key="current_online" value="Prisijungę žaidėjai"/>
+        <string key="archive" value="Archyvas"/>
+        <string key="fresh_levels" value="Švieži lygiai"/>
+        <string key="unverified" value="Nepatvirtinti"/>   <!-- plural -->
+        <string key="check_level" value="Tikrinti lygį"/>
+        <string key="instruction" value="Instrukcija"/>
+        <string key="moderator_how_to" value="Žaidėjai gali pateikti lygius serveriui, tačiau šių lygių kokybė gali skirtis. Lygiai taip pat gali pažeisti programėlių parduotuvės taisykles ir užblokuoti žaidimą. Moderatoriai padeda išvengti tokių problemų.# #Lygis turi būti atmestas šiais atvejais:#- Lygio pavadinimas pažeidžia programėlių parduotuvės taisykles.#- Pačiame lygyje yra kažkas akivaizdžiai neigiamo.#- Lygis yra susijęs su mažiau nei 50 metų senumo politiniais įvykiais.#- Akivaizdus šlamštas, kuris buvo sukurtas per kelias sekundes."/>
+        <string key="requesting_user_level" value="Žaidėjo lygio užklausa"/>
+        <string key="creation_time" value="Kūrimo laikas"/>
+        <string key="confirm_decline_level" value="Atmesti „[levelName]“?"/>
+        <string key="verify" value="Patvirtinti"/>
+        <string key="wait_to_upload" value="Vienas lygis per dieną"/>
+        <string key="loading_user_level" value="Įkeliamas žaidėjo lygis"/>
+        <string key="user_level_completed" value="Žaidėjo lygis pereitas"/>
+        <string key="not_completed" value="Nepereitas"/>
+        <string key="level_rated" value="Lygis įvertintas"/>
+        <string key="dislike" value="Nepatinka"/>
+        <string key="confirm_dislike_level" value="Tikrai nepatinka lygis?"/>
+        <string key="do_report" value="Skųstis"/>
+        <string key="reports" value="Skundai"/>
+        <string key="check_report" value="Tikrinti skundą"/>
+        <string key="report_sent" value="Skundas išsiųstas"/>
+        <string key="confirm_delete_level" value="Naikinti žaidėjo lygį?"/>
+        <string key="now_moderator" value="Dabar esate moderatorius"/>
+        <string key="win_to_send" value="Pereikite lygį, kad jį išsiųstumėte"/>
+        <string key="user_levels_bottom_hint" value="Šis sąrašas keičiasi kas porą minučių"/>
+        <string key="hide_completed" value="Slėpti pereitus"/>
+        <string key="any" value="Bet kuris"/>
+
+
+        <!-- Match -->
+        <string key="match" value="Mačas"/>
+        <string key="match_parameters" value="Mačo parametrai"/>
+        <string key="without_diplomacy" value="Be diplomatijos"/>
+        <string key="with_diplomacy" value="Su diplomatija"/>
+        <string key="preparation" value="Pasiruošimas"/>
+        <string key="starting_in" value="Pradžia po"/>
+        <string key="match_is_starting" value="Pradedamas mačas..."/>
+        <string key="custom_match" value="Tinkintas mačas"/>
+        <string key="turn_duration" value="Ėjimo trukmė"/>
+        <string key="password" value="Slaptažodis"/>
+        <string key="creating_match" value="Kuriamas mačas"/>
+        <string key="matches" value="Mačai"/>
+        <string key="empty" value="Tuščia"/>
+        <string key="joining_match" value="Prisijungimas prie mačo"/>
+        <string key="kick" value="Išmesti"/>
+        <string key="custom_map" value="Tinkintas žemėlapis"/>
+        <string key="exit_match" value="Išeiti iš mačo"/>
+        <string key="undo" value="Atšaukti veiksmą"/>
+        <string key="skipped_two_turns" value="Praleisti du ėjimai"/>
+        <string key="turd_was_ended_automatically" value="Ėjimas buvo baigtas automatiškai"/>
+        <string key="match_in_slow_mode" value="Mačas buvo atkurtas, todėl DI uždels ėjimus, kad žaidėjai galėtų grįžti."/>
+        <string key="toast_custom_map_parameters" value="Kai kurie parametrai bus perrašyti pasirinkto žemėlapio parametrais"/>
+        <string key="finish_current_match" value="Baikite dabartinį mačą"/>
+
+
+        <!-- Connection to server -->
+        <string key="connecting_to_server" value="Prisijungimas prie serverio..."/>
+        <string key="connected_to_server" value="Ryšys užmegztas"/>
+        <string key="checking_protocol" value="Tikrinamas protokolas..."/>
+        <string key="protocol_is_valid" value="Protokolas teisingas"/>
+        <string key="server_is_updating" value="Serveris naujinamas"/>
+        <string key="client_version_deprecated" value="Kliento versija pasenusi"/>
+        <string key="reconnect_attempt" value="Ryšys su serveriu nutrūko, žaidimas bandys iš naujo prisijungti"/>
+        <string key="offline" value="Atjungtis"/> <!-- status -->
+
+
+        <!-- Shop -->
+        <string key="exchange" value="Mainai"/> <!-- noun -->
+        <string key="do_exchange" value="Mainyti"/> <!-- verb -->
+        <string key="current_exchange_rate" value="Dabartinis mainų kursas"/>
+        <string key="not_enough_coins" value="Nepakanka monetų"/>
+        <string key="purchased" value="Įsigyta"/>
+        <string key="activated" value="Naudojama"/>
+        <string key="buy" value="Pirkti"/>
+        <string key="customization" value="Tinkinimas"/>
+        <string key="fish" value="Žuvis"/>
+        <string key="phrases" value="Frazės"/>
+        <string key="confirm_purchase" value="Pirkti [item] už [price]?"/>
+        <string key="hint_activate" value="Kad naudotumėte įsigytą daiktą, ant jo bakstelėkite"/>
+        <string key="buy_fish" value="Pirkti žuvį"/>
+        <string key="fish_received" value="Gavote žuvį"/>
+        <string key="fish_explanation" value="Antiyoy Online yra nemokamas internetinis žaidimas be reklamų. Žaidime galima pirkti žuvį už tikrus pinigus, bet tai nesuteiks jokių pranašumų. #Iš esmės tai yra būdas paremti kūrėją :)"/>
+        <string key="purchase_pending" value="Laukiama mokėjimo patvirtinimo"/>
+        <string key="restore_purchases" value="Atkurti pirkimus"/>
+        <string key="how_to_support_developer" value="Kaip paremti kūrėją"/>
+        <string key="how_to_support_developer_article" value="Antiyoy Online yra nemokamas internetinis žaidimas be reklamų. Žaidime galima įsigyti įvairių kosmetinių daiktų už tikrus pinigus, bet tai nesuteiks jokių pranašumų. Būčiau dėkingas, jei nusipirktumėte nedaug žuvies iš meniu „Tinkinimas“.# #Jei negalite nusipirkti žuvies, patarkite draugams, tai irgi padės :)"/>
+
+
+        <!-- Avatars -->
+        <string key="avatars" value="Avatarai"/>
+        <string key="crown" value="Karūna"/>
+        <string key="star" value="Žvaigždė"/>
+        <string key="eyes" value="Akis"/>
+        <string key="skull" value="Kaukolė"/>
+        <string key="cherry" value="Vyšnia"/>
+        <string key="lemon" value="Citrina"/>
+        <string key="heart" value="Širdelė"/>
+        <string key="finger_up" value="Nykštys aukštyn"/>
+        <string key="swords" value="Kalavijai"/>
+        <string key="hypno" value="Hipnas"/>
+        <string key="dice" value="Kauliukas"/>
+        <string key="heli" value="Sraigtai"/>
+        <string key="gear" value="Krumpliaratis"/>
+        <string key="face" value="Veidas"/>
+
+
+        <!-- Ranks -->
+        <string key="ranks" value="Titulai"/>
+        <string key="apprentice" value="naujokas"/>
+        <string key="bachelor" value="bakalauras"/>
+        <string key="rogue" value="plėšikas"/>
+        <string key="sentinel" value="sargas"/>
+        <string key="specialist" value="specialistas"/>
+        <string key="professor" value="profesorius"/>
+        <string key="shaman" value="šamanas"/>
+        <string key="judge" value="teisėjas"/>
+        <string key="inquisitor" value="inkvizitorius"/>
+        <string key="master" value="meistras"/>
+        <string key="king" value="karalius"/>
+        <string key="tzar" value="caras"/>
+        <string key="you" value="tai tu"/>
+        <string key="wild_animal" value="laukinis gyvūnas"/>
+        <string key="peasant" value="valstietis"/>
+        <string key="spearman" value="ietininkas"/>
+        <string key="baron" value="baronas"/>
+        <string key="knight" value="riteris"/>
+        <string key="tree" value="medis"/>
+        <string key="me" value="tai aš"/>
+        <string key="harmless_hamster" value="nekaltas žiurkėnas"/>
+        <string key="cheater" value="sukčius"/>
+        <string key="one_armed_bandit" value="vienarankis banditas"/>
+        <string key="two_armed_bandit" value="dvirankis banditas"/>
+        <string key="three_armed_bandit" value="trirankis banditas"/>
+        <string key="shameful_worm" value="gėdinga kirmėlė"/>
+        <string key="levitating_eye" value="skraidanti akis"/>
+        <string key="vicious_levitating_eye" value="pikta skraidanti akis"/>
+        <string key="smiling_dog_of_kindness" value="šypsantis gerumo šuo"/>
+        <string key="great_combinator" value="didysis kombinatorius"/>
+        <string key="father_of_russian_diplomacy" value="rusų diplomatijos tėvas"/>
+        <string key="professor_brains" value="profesorius „Smegenys“"/>
+        <string key="fluffy_cat" value="pūkuota katė"/>
+        <string key="sports_worm" value="sportiška kirmėlė"/>
+        <string key="evil_genius" value="piktas genijus"/>
+        <string key="khan" value="chanas"/>
+        <string key="emperor" value="imperatorius"/>
+        <string key="dictator" value="diktatorius"/>
+        <string key="generous_soul" value="dosni siela"/>
+
+
+
+
+
+        <!-- Phrases -->
+        <string key="hi" value="Labas"/>
+        <string key="goodbye" value="Ate"/>
+        <string key="thanks" value="Ačiū"/>
+        <string key="check_my_win_rate" value="Pažiūrėk į mano pergalių koeficientą"/>
+        <string key="check_my_play_time" value="Pažiūrėk į mano žaidimo laiką"/>
+        <string key="my_win_rate" value="Mano pergalių koeficientas"/>
+        <string key="my_play_time" value="Mano žaidimo laikas"/>
+        <string key="funny" value="Juokinga ;)"/>
+        <string key="this_battle_will_be_epic" value="Šis mūšis bus nepakartojamas!"/>
+        <string key="well_played" value="Neblogai sužaista"/>
+        <string key="good_luck" value="Sėkmės"/>
+        <string key="is_this_bug" value="Ar tai klaida?"/>
+        <string key="lets_build_farm" value="Pastatykime fermą, kad padidintumėme pelną."/>
+        <string key="good_morning_my_friend" value="Labas rytas, mano drauge"/>
+        <string key="lets_pretend_it_did_not_happen" value="Apsimeskime, kad nieko neatsitiko"/>
+        <string key="great_weather_outside" value="Puikus oras lauke"/>
+        <string key="important_not_to_win_but_to_take_part" value="Svarbiausia - ne pergalė, o dalyvavimas"/>
+        <string key="happy_new_year" value="Su Naujaisiais metais!"/>
+        <string key="came_saw_lost" value="Atėjau, pamačiau, pralaimėjau"/>
+        <string key="victory_will_be_mine" value="Pergalė bus mano"/>
+        <string key="tired_of_waiting" value="Nusibodo laukti"/>
+        <string key="no_player_better_than_me" value="Nėra geresnio žaidėjo už mane"/>
+        <string key="no_player_better_than_nickname" value="Nėra geresnio žaidėjo už [nickname]"/>
+        <string key="check_my_elp" value="Pažiūrėk į mano ELP"/>
+        <string key="check_my_rank" value="Pažiūrėk į mano titulą"/>
+        <string key="my_elp" value="Mano ELP"/>
+        <string key="i_am" value="Aš"/>
+        <string key="calculated" value="Viskas buvo apskaičiuota iki smulkiausių detalių"/>
+        <string key="i_know" value="Aš žinau ;)"/>
+        <string key="everyone_starts_somewhere" value="Visi pradedame nuo kažkur"/>
+        <string key="thanks_for_the_game" value="Ačiū už žaidimą"/>
+        <string key="not_so_fast" value="Ne taip greitai"/>
+        <string key="i_almost_laughed" value="Beveik mane prajuokino"/>
+        <string key="talk_on_discord_server" value="Pasikalbėkime Discord serveryje"/>
+        <string key="check_out_my_nickname" value="Pažiūrėk į mano pravardę"/>
+        <string key="come_on_press_button" value="Nagi, spustelėk mygtuką :("/>
+        <string key="long_time_no_see" value="Seniai nesimatėme"/>
+        <string key="how_so" value="Kaip taip?"/>
+        <string key="please_do_not_do_this" value="Prašau to nedaryti..."/>
+        <string key="i_am_peaceful" value="Aš taikus, neįkąsk man"/>
+
+        <!-- Skins -->
+        <string key="skins" value="Stiliai"/>
+        <string key="aww2" value="AWW 2.0"/>   <!-- Same as english -->
+        <string key="jannes" value="Jannes Peters"/>   <!-- Same as english -->
+        <string key="matvei" value="Matveismi art"/>   <!-- Same as english -->
+        <string key="katuri" value="Katuri"/>   <!-- Same as english -->
+        <string key="shroom" value="ShroomArts"/>   <!-- Same as english -->
+        <string key="old_rpg" value="Old RPG"/>   <!-- Same as english -->
+
+
+        <!-- Etc -->
+        <string key="hours_abbreviation" value="val."/>
+        <string key="minutes_abbreviation" value="min."/>
+        <string key="seconds_abbreviation" value="sek."/>
+        <string key="friends" value="Draugai"/>
+        <string key="save_slots" value="Išsaugojimai"/>
+        <string key="replay_name" value="Įrašo pavadinimas"/>
+        <string key="secret_information" value="Informacija slapta"/>
+
+
+        <!-- Pause menu -->
+        <string key="resume" value="Tęsti"/>
+        <string key="save" value="Išsaugoti"/>
+        <string key="main_lobby" value="Pagrindinis meniu"/>
+        <string key="restart" value="Pradėti iš naujo"/>
+        <string key="confirm_restart" value="Tikrai pradėti iš naujo?"/>
+        <string key="cancel" value="Atšaukti"/>
+        <string key="yes" value="Taip"/>
+        <string key="no" value="Ne"/>
+        <string key="level" value="Lygis:"/>
+
+
+        <!-- Match results -->
+        <string key="next" value="Toliau"/>
+        <string key="level_complete" value="Lygis pereitas"/>
+        <string key="level_failed" value="Lygis nepereitas"/>
+        <string key="okay" value="Gerai"/>
+        <string key="winner" value="Nugalėtojas"/>
+        <string key="opponent_left" value="Varžovas paliko mačą"/>
+        <string key="opponent_afk" value="Varžovas buvo neaktyvus"/>
+        <string key="time_out" value="Laikas baigėsi"/>
+        <string key="send_level" value="Siųsti lygį"/>
+        <string key="level_name_is_empty" value="Lygio pavadinimas negali būti tuščias"/>
+        <string key="level_sent" value="Lygis išsiųstas"/>
+        <string key="requesting_replay" value="Siunčiama įrašo užklausa..."/>
+
+
+        <!-- Gameplay -->
+        <string key="ok" value="Gerai"/>
+        <string key="income" value="Pajamos"/>
+        <string key="confirm_end_turn_question" value="Baigti ėjimą?"/>
+        <string key="economy" value="Ekonomika"/> <!-- tap profit sign (top middle part of screen) to see this string -->
+        <string key="farms" value="Fermos"/>
+        <string key="units" value="Vienetai"/>
+        <string key="towers" value="Bokštai"/>
+        <string key="trees" value="Medžiai"/>
+        <string key="confirm_win_early" value="Laimėti anksti?"/>
+
+
+        <!-- Tutorial -->
+        <string key="tutorial" value="Apmokymas"/>
+        <string key="basics" value="Pagrindai"/>
+        <string key="tactics" value="Taktikos"/>
+        <string key="press_button" value="Spustelėkite mygtuką"/>
+        <string key="tap_hex" value="Bakstelėkite"/>
+        <string key="basics_hello" value="Sveiki, aš jums padėsiu išmokti žaidimo pagrindus."/>
+        <string key="basics_select_kingdom" value="Jūs valdote karalystę. Bakstelėkite ant jos, kad ją pasirinktumėte."/>
+        <string key="basics_select_peasant" value="Norėdami išplėsti valdomas žemes, turite užimti provincijas. Leiskite man parodyti."/>
+        <string key="basics_unit_can_move_only_once" value="Kiekvienas vienetas gali eiti tik kartą per ėjimą."/>
+        <string key="basics_about_profit" value="Užimdami šią provinciją, padidinote savo karalystės pelną. Daugiau provincijų - daugiau pelno."/>
+        <string key="basics_this_is_profit" value="Tai yra pelnas"/>
+        <string key="basics_farm" value="Pastatykime fermą, kad padidintumėme pelną."/>
+        <string key="basics_these_are_construction_buttons" value="Tai yra statybos mygtukai"/>
+        <string key="basics_farm_cost" value="Ferma atneša 4 monetas per ėjimą. Kiekviena nauja ferma yra brangesnė nei ankstesnė."/>
+        <string key="basics_towers" value="Turime apsaugoti mūsų žemes. Tam puikiai tinka bokštai."/>
+        <string key="basics_towers2" value="Bokštai apsaugo gretimas provincijas nuo valstiečių ir ietininkų."/>
+        <string key="basics_units" value="Vienetą gali sunaikinti tik stipresnis vienetas. Kuo stipresnis vienetas, tuo jis brangesnis."/>
+        <string key="basics_undo" value="Šis mygtukas atšaukia paskutinį veiksmą."/>
+        <string key="basics_end_turn" value="Baikime mūsų ėjimą."/>
+        <string key="basics_merge" value="Dabar galite sujungti du vienetus į vieną stipresnį. Leiskite man parodyti."/>
+        <string key="basics_bye" value="Dabar esate susipažinę su žaidimo pagrindais. Sunaikinkite raudoną karalystę, kad pereitumėte lygį."/>
+        <string key="tactics_hello" value="Pakalbėkime apie tai, kaip laimėti."/>
+        <string key="tactics_economics" value="Kaip jau žinote, vienetai naudoja pinigus. Stipri kariuomenė reikalauja stiprios ekonomikos."/>
+        <string key="tactics_divide" value="Netoli jūsų sienų stovi didelė kariuomenė. Atskirkime ją nuo pagrindinės teritorijos."/>
+        <string key="tactics_provinces" value="Atskirdami priešo kariuomenę nuo pagrindinės teritorijos, padalinome priešo karalystę į dvi dalis."/>
+        <string key="tactics_separate_economics" value="Kiekviena provincija turi savo atskirą ekonomiką. Priešo kariuomenė atsidūrė provincijoje be pinigų ir beveik be pajamų."/>
+        <string key="tactics_hint1" value="Pora mažų patarimų. Pirma, bakstelėkite ant bet kurio jūsų bokšto, kad pamatytumėte, kurios žemės yra apsaugotos statinio."/>
+        <string key="tactics_hint2" value="Antra, jei norite žinoti visų karalysčių pajamas, tada bakstelėkite ant monetos."/>
+        <string key="tactics_hint3" value="Trečia, su ilgo bakstelėjimo pagalba galite greitai perkelti dideles kariuomenes."/>
+        <string key="tactics_bye" value="Ir paskutinis dalykas. Jei provincijoje užaugs medis, tada tokia provincija neduos pajamų."/>
+        <string key="diplomacy_hello" value="Išsiaiškinkime, kaip veikia diplomatija."/>
+        <string key="diplomacy_mode" value="Pirmiausia turite įeiti į diplomatijos režimą."/>
+        <string key="diplomacy_you_can_mail" value="Diplomatijos režime galite matyti santykius su kitomis karalystėmis. Taip pat galite siųsti laiškus."/>
+        <string key="diplomacy_lets_write" value="Parašykime laišką geltonai karalystei. Kad tai padaryti, jums tereikia ant jos bakstelėti."/>
+        <string key="diplomacy_propose_friendship" value="Laiškas susideda iš sąlygų. Pasiūlykime šiai karalystei draugystę."/>
+        <string key="diplomacy_setup_condition" value="Čia galite keisti sąlygas."/>
+        <string key="diplomacy_check_mail" value="Patikrinkime paštą, staiga jie mums atsiuntė puikų pasiūlymą."/>
+        <string key="diplomacy_agree" value="Rodyklė sąlygos kairėje rodo, kam bus naudinga. Rožinė karalystė siūlo aljansą už jų žemes. Skamba gerai, turite sutikti."/>
+        <string key="diplomacy_lock" value="Dabar esate aljanse su rožine karalyste. 7 ėjimų eigoje šis aljansas bus nenutraukiamas (tai vadinama „blokavimas“)."/>
+        <string key="diplomacy_alliance" value="Aljanso esmė yra paprasta: jei vienas aljanso narys yra kare su kuria nors valstybe, tai kiti aljanso nariai prisijungia prie šio karo."/>
+        <string key="diplomacy_indicators" value="Beje, diplomatijos režime galite matyti spalvotus indikatorius išilgai valstybių sienų. Jie rodo santykius tarp valstybių."/>
+        <string key="diplomacy_bye" value="Dabar esate susipažinę su diplomatijos pagrindais :)"/>
+
+
+        <!-- Diplomacy -->
+        <string key="neutral" value="Neutralus"/>
+        <string key="war" value="Karas"/>
+        <string key="friend" value="Draugas"/>
+        <string key="alliance" value="Aljansas"/>
+        <string key="letter" value="Laiškas"/>
+        <string key="recipient" value="Gavėjas"/>
+        <string key="send" value="Siųsti"/>
+        <string key="relation" value="Santykiai"/>
+        <string key="lock" value="Blokavimas (ėjimai)"/>
+        <string key="target" value="Taikinys"/>
+        <string key="lands" value="Žemės"/>
+        <string key="choose_lands" value="Pasirinkite žemes"/>
+        <string key="letters" value="Laiškai"/> <!-- plural -->
+        <string key="give_money" value="Pinigai"/>
+        <string key="give_lands" value="Žemės"/>   <!-- yes, this string should be the same as 'lands' -->
+        <string key="change_relation" value="Santykis"/>
+        <string key="sender" value="Siuntėjas"/>
+        <string key="agree" value="Sutikti"/>
+        <string key="decline" value="Atmesti"/>
+        <string key="conditions_are_impracticable" value="Sąlygos neįgyvendinamos"/>
+        <string key="declared_war" value="Karo paskelbimas"/>
+        <string key="declared_neutral" value="Neutralumo paskelbimas"/>
+        <string key="declared_friend" value="Draugystės paskelbimas"/>
+        <string key="notification" value="Pranešimas"/>
+        <string key="smileys" value="Jaustukai"/>
+
+
+        <!-- Editor -->
+        <string key="create" value="Kurti"/>
+        <string key="import" value="Importuoti"/>
+        <string key="export" value="Eksportuoti"/>
+        <string key="delete" value="Naikinti"/>
+        <string key="remove" value="Šalinti"/>
+        <string key="rename" value="Pervardyti"/>
+        <string key="exported" value="Eksportuota"/>
+        <string key="editor_slots" value="Redaktoriaus lygiai"/>
+        <string key="create_new_level" value="Kurti naują lygį"/>
+        <string key="generate" value="Generuoti"/>
+        <string key="confirm_clear_level" value="Valyti lygį?"/>
+        <string key="random_generation" value="Atsitiktinė generacija"/>
+        <string key="lands_density" value="Žemių tankis"/>
+        <string key="trees_density" value="Medžių tankis"/>
+        <string key="nodes_value" value="Provincijų reikšmė"/>
+        <string key="loop" value="Kilpa"/>
+        <string key="neutral_towers" value="Neutralūs bokštai"/>
+        <string key="neutral_cities" value="Neutralūs miestai"/>
+        <string key="graves" value="Kapai"/>
+        <string key="money" value="Pinigai"/>
+        <string key="launch" value="Paleisti"/>
+        <string key="level_exported" value="Lygis eksportuotas"/>
+        <string key="slot" value="Lygis"/>
+        <string key="confirm_share_level" value="Prieš siųsdami lygi serveriui, turite jį pereiti. Spustelėkite „Toliau“, jei esate pasiruošę tai daryti dabar."/>
+        <string key="level_name" value="Lygio pavadinimas"/>
+        <string key="human_players" value="Gyvi žaidėjai"/>
+        <string key="confirm_deletion" value="Naikinti „[slot_name]“?"/>
+        <string key="relations" value="Santykiai"/>
+
+
+        <!-- Calendar -->
+        <string key="calendar" value="Kalendorius"/>
+        <string key="january" value="Sausis"/>
+        <string key="february" value="Vasaris"/>
+        <string key="march" value="Kovas"/>
+        <string key="april" value="Balandis"/>
+        <string key="may" value="Gegužė"/>
+        <string key="june" value="Birželis"/>
+        <string key="july" value="Liepa"/>
+        <string key="august" value="Rugpjūtis"/>
+        <string key="september" value="Rugsėjis"/>
+        <string key="october" value="Spalis"/>
+        <string key="november" value="Lapkritis"/>
+        <string key="december" value="Gruodis"/>
+
+
+        <!-- Settings -->
+        <string key="restart_app" value="Paleiskite žaidimą iš naujo"/>
+        <string key="lang" value="Kalba"/>
+        <string key="sound" value="Garsas"/>
+        <string key="full_screen" value="Visas ekranas"/>
+        <string key="settings" value="Nustatymai"/>
+        <string key="graphics" value="Grafika"/>
+        <string key="low" value="žema"/>
+        <string key="medium" value="vidutinė"/>
+        <string key="high" value="aukšta"/>
+        <string key="languages" value="Kalbos"/>
+        <string key="autosave" value="Automatinis išsaugojimas"/>
+        <string key="confirm_end_turn" value="Patvirtinimas ėjimo baigimui"/>
+        <string key="help" value="Pagalba"/>
+        <string key="reset" value="Atkurti"/>
+        <string key="confirm_reset_settings" value="Tikrai atkurti nustatymus?"/>
+        <string key="water_texture" value="Vandens tekstūra"/>
+        <string key="long_tap" value="Ilgas bakstelėjimas"/>
+        <string key="explanation_long_tap" value="Leidžia greitai perkelti vienetus su ilgu bakstelėjimu"/>
+        <string key="detailed_info" value="Išsami informacija"/>
+        <string key="explanation_detailed_info" value="Daugiau informacijos žaidėjų lygių sąraše"/>
+        <string key="alert_about_turn_start" value="Įspėti apie ėjimo pradžią"/>
+        <string key="automatic_turn_end" value="Automatiškai baigti ėjimą"/>
+        <string key="explanation_automatic_turn_end" value="Ėjimai bus baigti automatiškai, jei nebus ką veikti"/>
+        <string key="grid" value="Tinklelis"/>
+        <string key="localize_time" value="Išversti laiką"/>
+        <string key="explanation_localize_time" value="Paveikia, kaip bus rodomas laikas"/>
+        <string key="reconnection" value="Prisijungimas iš naujo"/>
+        <string key="explanation_reconnection" value="Jei nutrūks ryšys, žaidimas automatiškai prisijungs prie serverio ir grįš į dabartinį mačą"/>
+        <string key="construction_panel" value="Statybos skydas"/>
+        <string key="hide_statistics" value="Slėpti statistiką"/>
+        <string key="explanation_hide_statistics" value="Jūsų statistika bus paslėpta nuo kitų žaidėjų mačo metu"/>
+        <string key="gray_void" value="Pilka tuštuma"/>
+
+
+        <!-- Statistics -->
+        <string key="statistics" value="Statistika"/>
+        <string key="turns_made" value="Ėjimai"/>
+        <string key="rules" value="Taisyklės"/>
+        <string key="def" value="pagal standartą"/>
+        <string key="classic" value="klasikinės"/>
+        <string key="experimental" value="eksperimentinės"/>
+        <string key="units_built" value="Pastatyta vienetų"/>
+        <string key="units_merged" value="Sujungta vienetų"/>
+        <string key="units_died" value="Žuvo vienetų"/>
+        <string key="money_spent" value="Išleista pinigų"/>
+        <string key="trees_felled" value="Iškirsta medžių"/>
+        <string key="max_profit" value="Daugiausia pelno"/>
+        <string key="first_attack" value="Pirmasis puolimas (ėjimas)"/>
+
+
+        <!-- Other -->
+        <string key="special_thanks_title" value="Ypatinga padėka"/>
+        <string key="special_thanks_begin" value="Ypatinga padėka šiems žmonėms: #"/>
+        <string key="caught_exception" value="O ne, kažkas nutiko! # #Jei jums nesudėtinga, tada padarykite ekrano nuotrauką ir išsiųskite ją man el. paštu: yiotro93@gmail.com"/>
+        <string key="keyboard_layout" value="ą ž e r t y u i o p į;a s d f g h j k l ų ė;z ū c v b n m č š ę"/>
+        <string key="ios_release" value="Dabar prieinama su iOS sistemomis"/>
+        <string key="link_copied_to_clipboard" value="Nuoroda nukopijuota į iškarpinę"/>
+
+    </language>
