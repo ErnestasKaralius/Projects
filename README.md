@@ -1,8 +1,8 @@
 # This repository contains projects I have worked on over the past years.
 
-## The programs in the [C++ Folder](https://github.com/ErnestasKaralius/C-Programs/tree/main/C%2B%2B) have been written in 2020-2022.
+## Programs in the [C++ Folder](https://github.com/ErnestasKaralius/C-Programs/tree/main/C%2B%2B) have been written in 2020-2022.
 
-## The programs in the [C Folder](https://github.com/ErnestasKaralius/C-Programs/tree/main/C) have been written starting 2022.
+## Programs in the [C Folder](https://github.com/ErnestasKaralius/C-Programs/tree/main/C) have been written starting 2022.
 
 ## Translations in the [Translations Folder](https://github.com/ErnestasKaralius/Projects/tree/main/Translations) are from a variety of games & mods I have translated since 2019.
 - [Antiyoy Online](https://play.google.com/store/apps/details?id=yio.tro.onliyoy&gl=US)
