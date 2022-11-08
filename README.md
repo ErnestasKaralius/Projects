@@ -1,8 +1,8 @@
 # This repository contains projects I have worked on over the past years.
 
-## Programs in the [C++ Folder](https://github.com/ErnestasKaralius/C-Programs/tree/main/C%2B%2B) have been written in 2020-2022.
+## Programs in the [C++ Folder](https://github.com/ErnestasKaralius/C-Programs/tree/main/C%2B%2B).
 
-## Programs in the [C Folder](https://github.com/ErnestasKaralius/C-Programs/tree/main/C) have been written starting 2022.
+## Programs in the [C Folder](https://github.com/ErnestasKaralius/C-Programs/tree/main/C).
 
 ## Programs in the [Assembly Folder](https://github.com/ErnestasKaralius/Projects/tree/main/Assembly).
 
