@@ -11,7 +11,7 @@
 #if __WIN32
     #define DIR_SEPERATOR "\\"
 #else
-    #define DIR_SEPERATOR "//"
+    #define DIR_SEPERATOR "/"
 #endif
 
 #if __linux__
@@ -53,13 +53,13 @@ int copy_file(const char* source_path, const char* destination_path)
     FILE* source_file = fopen(source_path, "rb");
     if(source_file == NULL)
     {
-        printf("FAILED TO READ FILE \"%s\"\n", source_path);
+        printf("FAILED TO READ FILE \"%s\": %s\n", source_path, strerror(errno));
         return -1;
     }
     FILE* new_file = fopen(destination_path, "wb");
     if(new_file == NULL)
     {
-        printf("FAILED TO CREATE FILE \"%s\"\n", destination_path);
+        printf("FAILED TO CREATE FILE \"%s\": %s\n", destination_path, strerror(errno));
         fclose(source_file);
         return -1;
     }
@@ -81,20 +81,14 @@ void copy_directory(const char* path, const char* copy_path)
     DIR* directory = opendir(path);
     if(directory == NULL)
     {
-        printf("COULDN'T OPEN DIRECTORY \"%s\"\n", path);
+        printf("COULDN'T OPEN DIRECTORY \"%s\": %s\n", path, strerror(errno));
         return;
     }
 
     // If a Directory exists, we don't need to create a new one
     if(mkdir_function == -1 && errno != EEXIST)
     {
-        if(errno == EACCES)
-            printf("WRITE NOT ALLOWED IN PARENT DIRECTORY of\"%s\"\n", copy_path);
-        else if(errno == ENAMETOOLONG)
-            printf("PATHNAME \"%s\" IS TOO LONG!\n", copy_path);
-        else
-            printf("MKDIR FAILURE\n");
-
+        printf("COULDN'T CREATE DIRECTORY \"%s\": %s\n", copy_path, strerror(errno));
         return;
     }
 
