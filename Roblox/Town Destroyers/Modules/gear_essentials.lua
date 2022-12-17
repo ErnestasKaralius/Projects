@@ -47,8 +47,11 @@ function gear_essentials.has_same_team(target_player : Player | Model, attacking
 	return (target_player :: Player).Team == (attacking_player :: Player).Team
 end
 
-function gear_essentials.character_alive(humanoid : Humanoid)
-	return (humanoid and humanoid.Parent and humanoid.Health > 0) :: boolean
+function gear_essentials.character_alive(character)
+	if not character then return false end
+	
+    local humanoid = (character:FindFirstChildWhichIsA("Humanoid") or character) :: Humanoid
+    return humanoid and humanoid.Health > 0
 end
 
 function gear_essentials.raycast_to_character(origin: Vector3, target : Vector3, range : Vector3, original_character : Model) : {[number] : Model | Humanoid}
