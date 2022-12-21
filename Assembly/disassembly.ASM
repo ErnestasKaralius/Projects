@@ -34,7 +34,8 @@ FILENAME_SIZE EQU 30
 
     write_instruction_info macro count
         local @@output_opcodes
-        fwrite output_fh, space, 02h
+        fwrite output_fh, colon, 02h
+
         mov cx, count
         push cx
 
@@ -429,7 +430,7 @@ check_6_bit_opcodes proc
     pop bx
     push bx
     and bl, 00000010b 
-    cmp bl, 00000010b
+    cmp bl, 00000000b
     je first_r_m
 
     pop bx
@@ -480,7 +481,7 @@ check_6_bit_opcodes proc
         cmp bl, 00000001b 
         je adc_op_16_bit
 
-        mov al, [di + 1]
+        mov al, [di + 2]
         call byte_to_hex
         fwrite output_fh, [converted_hex], 02h
         
@@ -490,11 +491,11 @@ check_6_bit_opcodes proc
         ret 
 
         adc_op_16_bit:
-            mov al, [di + 2]
+            mov al, [di + 3]
             call byte_to_hex
             fwrite output_fh, [converted_hex], 02h 
 
-            mov al, [di + 1]
+            mov al, [di + 2]
             call byte_to_hex
             fwrite output_fh, [converted_hex], 02h
 
@@ -857,7 +858,7 @@ output_r_m proc
         fwrite output_fh, bracket_left, 01h
         call print_opcode
         fwrite output_fh, plus, 03h
-        mov bl, [di]
+        mov bl, [di + 1]
         and bl, 11000000b
         cmp bl, 10000000b
         je two_byte_offset
@@ -870,9 +871,13 @@ output_r_m proc
         ret
 
         two_byte_offset:
+            mov al, [di + 3]
+            call byte_to_hex
+            fwrite output_fh, [converted_hex], 02h
+
             mov al, [di + 2]
             call byte_to_hex
-            fwrite output_fh, [converted_hex], 04h
+            fwrite output_fh, [converted_hex], 02h
             fwrite output_fh, bracket_right, 01h
 
          ret
@@ -882,13 +887,22 @@ output_r_m endp
 
 get_instruction_size proc
     mov cx, 04h
+
     mov bl, [di + 1]
     and bl, 11000000b
     cmp bl, 10000000b
     je size_found
+
     
     mov cx, 03h
     cmp bl, 01000000b
+    je size_found
+
+    mov cx, 04h 
+
+    mov bl, [di + 1]
+    and bl, 00000111b
+    cmp bl, 00000110b
     je size_found
 
     mov cx, 02h 
@@ -939,6 +953,7 @@ print_line_offset proc
     mov ax, [read_amount]
     call word_to_hex
 
+    fwrite output_fh, colon, 02h
     fwrite output_fh, [converted_hex], 04h
     fwrite output_fh, new_line, 02h
 ret
