@@ -527,25 +527,59 @@ check_6_bit_opcodes proc
         cmp bl, 00000001b 
         je adc_op_16_bit
 
-        movzx ax, [di + 2]
+        push di
+        mov bl, [di + 1]
+        and bl, 11000000b 
+        cmp bl, 01000000b 
+        je is_4th_byte
+        cmp bl, 10000000b
+        je is_4th_byte
+
+        add di, 2
+        mov cx, 03h
+        jmp print_one_disp
+        is_4th_byte:
+        add di, 3
+        mov cx, 04h
+
+        print_one_disp:
+        movzx ax, [di]
         call word_to_hex
         fputs converted_hex, 04h
         
-        write_instruction_info 03h
-
+        pop di 
+        write_instruction_info cx
         pop bx
         ret 
 
         adc_op_16_bit:
-            mov al, [di + 3]
-            call byte_to_hex
-            fputs converted_hex, 02h 
+            push di 
+            mov al, [di + 1]
+            and al, 11000000b 
+            cmp al, 10000000b
+            je four_bytes
 
-            mov al, [di + 2]
-            call byte_to_hex
-            fputs converted_hex, 02h
+            cmp al, 01000000b
+            je four_bytes
 
-            write_instruction_info 04h
+            add di, 3
+            mov cx, 04h
+            jmp print_disp
+            four_bytes:
+                add di, 4
+                mov cx, 05h
+
+            print_disp:
+                mov al, [di]
+                call byte_to_hex
+                fputs converted_hex, 02h 
+
+                mov al, [di - 1]
+                call byte_to_hex
+                fputs converted_hex, 02h
+                pop di 
+
+            write_instruction_info cx
 
             pop bx
             ret
