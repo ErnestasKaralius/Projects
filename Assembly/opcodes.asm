@@ -64,10 +64,11 @@
     r_BP_DI db "BP + DI", 0
 
     colon db ": ", 0
-    new_line db 13, 10
-    space db 20h, 20h
+    new_line db 13, 10, 0
+    space db 20h, 0
     plus db " + ", 0
     comma db ", ", 0
     bracket_left db "[", 0
     bracket_right db "]", 0
     number_1 db "1", 0
+    tabs db 09h, 09h, 0

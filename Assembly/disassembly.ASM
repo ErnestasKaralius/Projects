@@ -6,68 +6,91 @@ BUFFER_SIZE EQU 512
 FILENAME_SIZE EQU 30
 
 .data  
-    help_message db "Programa disasemblina NEG, RCL, ADC, AAM, AAD, HALT, WAIT, LOCK, CBW, CWD, ESC, ADC instrukcijas.$"
-    open_fail_message db "Nepavyko atidaryti failo!$"
-    no_instruction_found db " NEATPAZINTA", 13, 10, 0
-    
     include opcodes.asm
+    help_message db "Programa disasemblina NEG, RCL, ADC, AAM, AAD, HLT, WAIT, LOCK, CBW, CWD, ESC, ADC instrukcijas.$"
+    no_instruction_found db " NEATPAZINTA", 13, 10, 0
 
-    fwrite macro file_handle, buff, buff_size
-        push ax
-        push bx
-        push cx
-        push dx
+    buffer db BUFFER_SIZE dup(?)
+    filename_buffer db FILENAME_SIZE dup(?)
+    output_buffer db FILENAME_SIZE dup(?)
 
-        mov	ax, 4000h
-        mov bx, file_handle
-        lea	dx, buff
-        mov	cx, buff_size
-        int	21h
-        jc exit
-        
+    output_prefix db "res_"
+    prefix_length dw 0
 
-        pop dx
-        pop cx
-        pop bx
-        pop ax
-    endm
+    input_fh dw 0h
+    output_fh dw 0h
+
+
+    hex_characters db "0123456789ABCDEF"
+    converted_hex db 04h dup(?)
+
+    read_amount dw 100h
 
     write_instruction_info macro count
-        local @@output_opcodes
-        fwrite output_fh, colon, 02h
+        local @@instruction_hex
+        fputs tabs
+        fputs colon
 
         mov cx, count
         push cx
 
-        @@output_opcodes:
+        cmp cx, 2 
+        jle @@instruction_hex
+
+        mov bl, [di + 1]
+        and bl, 11000000b 
+        cmp bl, 11000000b
+        je @@instruction_hex
+
+        add cx, 1
+        dec di
+
+        @@instruction_hex:
             push cx
 
             mov al, [di]
             call byte_to_hex
-            fwrite output_fh, [converted_hex], 02h
-            fwrite output_fh, space, 01h
+            fputs converted_hex, 02h
+            fputs space
 
             pop cx
             inc di
-            loop @@output_opcodes
+            loop @@instruction_hex
 
-        call print_line_offset
+        call output_line_offset
         pop cx
         dec di
         add [read_amount], cx
         sub [read_amount], 1
     endm
-    
-    buffer db BUFFER_SIZE dup(?)
-    filename_buffer db FILENAME_SIZE dup(?)
-    output_buffer db FILENAME_SIZE dup(?)
-    input_fh dw 0h
-    output_fh dw 0h
 
-    hex_characters db "0123456789ABCDEF"
-    converted_hex db 4 dup (?)
-    read_amount dw 100h
+    fputs macro string, count
+        push ax
+        push bx
+        push dx
+        push cx
 
+        ifdifi <dx>, <string>
+            lea	dx, string
+        endif
+
+        ifdifi <count>, <>
+            xor cx, cx
+            mov cx, count
+        else
+            call strlen
+        endif
+
+        mov ax, 4000h
+        mov bx, output_fh
+        int 21h
+        jc exit
+
+        pop cx
+        pop dx
+        pop bx
+        pop ax
+    endm
 .code
     begin:
         mov ax, @data
@@ -78,8 +101,22 @@ FILENAME_SIZE EQU 30
 		mov cl, es:[80h]
 		cmp cl, 0
         je help
-
+        
         call search_for_help
+
+        lea dx, output_prefix
+        call strlen
+        mov [prefix_length], cx
+        lea di, output_prefix
+        lea si, output_buffer
+        ; movsb doesn't work :(
+        copy_str:
+            mov bl, [di]
+            mov [si], bl
+            inc di 
+            inc si 
+
+            loop copy_str
 
 		mov si, 82h
 		disassemble_files:
@@ -129,6 +166,8 @@ FILENAME_SIZE EQU 30
                     inc di
                     add [read_amount], 1
                     loop read_buffer
+                
+                jmp read_file
 
             stop_read:
                 ; Close current input file
@@ -167,14 +206,9 @@ FILENAME_SIZE EQU 30
 check_8_bit_opcodes proc
     push bx
 
-    mov cx, 06h 
     lea dx, s_PUSHF
     cmp bl, 09Ch
     je eight_bit_no_offset
-
-    ;;;;;;;;;;;
-    mov cx, 05h ; WAIT, LOCK, HALT, POPF, JCXZ, XLAT
-    ;;;;;;;;;;;
 
     lea dx, s_POPF
     cmp bl, 09Dh 
@@ -195,11 +229,6 @@ check_8_bit_opcodes proc
     lea dx, s_XLAT
     cmp bl, 0D7h
     je eight_bit_no_offset
-
-
-    ;;;;;;;;;;;
-    mov cx, 04h ; AAM AND AAD
-    ;;;;;;;;;;;
 
     lea dx, s_HLT
     cmp bl, 0F4h
@@ -272,10 +301,6 @@ check_8_bit_opcodes proc
     cmp bl, 099h
     je output_jump
 
-    ;;;;;;;;;;;
-    mov cx, 03h ; Will be 2 char long instructions
-    ;;;;;;;;;;;
-
     lea dx, s_JO ; Jump overflow
     cmp bl, 070h
     je output_jump
@@ -313,14 +338,31 @@ check_8_bit_opcodes proc
     ret
 
     output_jump:
-        call print_opcode
+        fputs dx
 
         mov ax, [read_amount]
-        add al, [di + 1]
-        add al, 2
+
+        mov bl, [di + 1]
+        and bl, 10000000b 
+        cmp bl, 10000000b 
+        jne not_signed_disp
+
+        signed_disp:
+            movzx bx, [di + 1]
+            not bx
+            add bx, 1 
+            sub ax, bx
+            jmp disp_done 
+
+        not_signed_disp:
+            movzx bx, [di + 1]
+            add ax, bx
+
+        disp_done:
+            add ax, 2
 
         call word_to_hex
-        fwrite output_fh, [converted_hex], 04h
+        fputs converted_hex, 04h
 
         write_instruction_info 02h
 
@@ -328,7 +370,7 @@ check_8_bit_opcodes proc
         ret
 
     eight_bit_no_offset:
-        call print_opcode
+        fputs dx
         write_instruction_info 01h
 
         pop bx
@@ -338,9 +380,9 @@ check_8_bit_opcodes endp
 check_7_bit_opcodes proc
     push bx
 
-    ;;;;;;;;;;;;;;;;;;;;;;;;;
-    ;;;;; Check for NEG ;;;;;
-    ;;;;;;;;;;;;;;;;;;;;;;;;;
+    ;;;;;;;;;;;;;;;
+    ;;;;; NEG ;;;;;
+    ;;;;;;;;;;;;;;;
 
     mov bl, [di]
     and bl, 11111110b 
@@ -352,7 +394,7 @@ check_7_bit_opcodes proc
     cmp bl, 00011000b 
     jne is_not_neg
 
-    fwrite output_fh, s_NEG, 04h
+    fputs s_NEG
 
     call output_r_m
     call get_instruction_size
@@ -362,28 +404,28 @@ check_7_bit_opcodes proc
     ret
     is_not_neg:
 
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ;;;;; ADC Accumulator + Operand ;;;;;
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    ;;;;; ADC AX/AL + Operand ;;;;;
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
     mov bl, [di]
     and bl, 11111110b 
     cmp bl, 00010100b 
     jne not_7_bit 
 
-    fwrite output_fh, s_ADC, 04h
+    fputs s_ADC
 
     mov bl, [di]
     and bl, 00000001b 
     cmp bl, 00000001b 
     je two_byte_adc_accu
 
-    fwrite output_fh, r_AL, 02h
-    fwrite output_fh, comma, 02h
+    fputs r_AL
+    fputs comma
 
     mov al, [di + 1]
     call byte_to_hex
-    fwrite output_fh, [converted_hex], 02h 
+    fputs converted_hex, 02h
 
     write_instruction_info 02h
 
@@ -392,16 +434,16 @@ check_7_bit_opcodes proc
 
     two_byte_adc_accu:
 
-    fwrite output_fh, r_AX, 02h
-    fwrite output_fh, comma, 02h
+    fputs r_AX
+    fputs comma
 
     mov al, [di + 2]
     call byte_to_hex
-    fwrite output_fh, [converted_hex], 02h 
+    fputs converted_hex, 02h 
 
     mov al, [di + 1]
     call byte_to_hex
-    fwrite output_fh, [converted_hex], 02h 
+    fputs converted_hex, 02h
 
     write_instruction_info 03h
 
@@ -425,7 +467,7 @@ check_6_bit_opcodes proc
     cmp bl, 00010000b
     jne maybe_adc_reg_mem_op
 
-    fwrite output_fh, s_ADC, 04h
+    fputs s_ADC
 
     pop bx
     push bx
@@ -436,7 +478,7 @@ check_6_bit_opcodes proc
     pop bx
     push bx
     call output_reg
-    fwrite output_fh, comma, 02h
+    fputs comma
     pop bx
     push bx
 
@@ -448,7 +490,7 @@ check_6_bit_opcodes proc
             pop bx
             push bx
             call output_r_m
-            fwrite output_fh, comma, 02h
+            fputs comma
             pop bx
             push bx
 
@@ -461,6 +503,10 @@ check_6_bit_opcodes proc
         pop bx
         ret
 
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    ;;;;; ADC R/M + OPERAND ;;;;;
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
     maybe_adc_reg_mem_op:
         mov bl, [di]
         and bl, 11111100b 
@@ -472,18 +518,18 @@ check_6_bit_opcodes proc
         cmp bl, 00010000b
         jne maybe_rcl
 
-        fwrite output_fh, s_ADC, 04h 
+        fputs s_ADC
         call output_r_m
-        fwrite output_fh, comma, 02h
+        fputs comma
 
         mov bl, [di]
         and bl, 00000011b
         cmp bl, 00000001b 
         je adc_op_16_bit
 
-        mov al, [di + 2]
-        call byte_to_hex
-        fwrite output_fh, [converted_hex], 02h
+        movzx ax, [di + 2]
+        call word_to_hex
+        fputs converted_hex, 04h
         
         write_instruction_info 03h
 
@@ -493,16 +539,21 @@ check_6_bit_opcodes proc
         adc_op_16_bit:
             mov al, [di + 3]
             call byte_to_hex
-            fwrite output_fh, [converted_hex], 02h 
+            fputs converted_hex, 02h 
 
             mov al, [di + 2]
             call byte_to_hex
-            fwrite output_fh, [converted_hex], 02h
+            fputs converted_hex, 02h
 
             write_instruction_info 04h
 
             pop bx
-            ret            
+            ret
+
+    ;;;;;;;;;;;;;;;
+    ;;;;; RCL ;;;;;
+    ;;;;;;;;;;;;;;;   
+
     maybe_rcl:
         mov bl, [di]
         and bl, 11111100b
@@ -514,26 +565,25 @@ check_6_bit_opcodes proc
         cmp bl, 00010000b
         jne not_rcl
 
-        fwrite output_fh, s_RCL, 04h 
+        fputs s_RCL
         call output_r_m
-        fwrite output_fh, comma, 02h 
+        fputs comma
 
         mov bl, [di]
         and bl, 00000010b
         cmp bl, 00000010b 
         je rcl_print_cl_reg
             
-        fwrite output_fh, number_1, 01h
+        fputs number_1
         write_instruction_info 02h
         pop bx
         ret
 
         rcl_print_cl_reg:
-            fwrite output_fh, r_CL, 02h 
+            fputs r_CL
             write_instruction_info 02h
             pop bx
             ret
-
 
         not_rcl:
         pop bx
@@ -544,12 +594,16 @@ check_6_bit_opcodes endp
 check_5_bit_opcodes proc
     push bx 
 
+    ;;;;;;;;;;;;;;;
+    ;;;;; ESC ;;;;;
+    ;;;;;;;;;;;;;;;
+
     mov bl, [di]
     and bl, 11111000b 
     cmp bl, 11011000b
     jne not_found
 
-    fwrite output_fh, s_ESC, 04h
+    fputs s_ESC
 
     mov al, [di]
     and al, 00000111b
@@ -562,8 +616,8 @@ check_5_bit_opcodes proc
 
     add al, bl
     call byte_to_hex
-    fwrite output_fh, [converted_hex], 02h
-    fwrite output_fh, comma, 02h
+    fputs converted_hex, 02h
+    fputs comma
 
     call output_r_m
 
@@ -581,8 +635,8 @@ check_5_bit_opcodes proc
         cmp bl, 036h
         je check_stop
 
-        call print_part_of_opcode
-        fwrite output_fh, no_instruction_found, 0Eh
+        call output_8_bit_hex
+        fputs no_instruction_found
 
     check_stop:
     pop bx 
@@ -590,7 +644,6 @@ ret
 check_5_bit_opcodes endp
 
 output_reg proc
-    mov cx, 02h 
 
     and bl, 00000001b
     cmp bl, 00000001b
@@ -667,7 +720,7 @@ output_reg proc
         jmp output_register
 
     output_register:
-        call print_opcode
+        fputs dx
 ret
 output_reg endp
 
@@ -692,7 +745,6 @@ output_r_m proc
     mod_11_0:
         pop bx
         and bl, 00000111b
-        mov cx, 02h
 
         lea dx, r_AL
         cmp bl, 00000000b
@@ -728,7 +780,6 @@ output_r_m proc
     mod_11_1:
         pop bx
         and bl, 00000111b
-        mov cx, 02h
 
         lea dx, r_AX
         cmp bl, 00000000b
@@ -765,7 +816,6 @@ output_r_m proc
         pop bx
         and bl, 00000111b
 
-        mov cx, 07h
         lea dx, r_BX_SI
         cmp bl, 00000000b
         je print_only_adress
@@ -782,7 +832,6 @@ output_r_m proc
         cmp bl, 00000011b
         je print_only_adress
 
-        mov cx, 02h
         lea dx, r_SI
         cmp bl, 00000100b
         je print_only_adress
@@ -797,17 +846,20 @@ output_r_m proc
 
         ; SPECIAL CASE
         call output_segment_register
-        add di, 2
-        fwrite output_fh, bracket_left, 01h
-        call print_part_of_opcode
-        fwrite output_fh, bracket_right, 01h
-        sub di, 2
+        fputs bracket_left
+        mov al, [di + 3]
+        call byte_to_hex
+        fputs converted_hex, 02h
+        
+        mov al, [di + 2]
+        call byte_to_hex
+        fputs converted_hex, 02h
+        fputs bracket_right
         ret
     
     mod_01_or_10:
         pop bx
         and bl, 00000111b
-        mov cx, 07h
 
         lea dx, r_BX_SI
         cmp bl, 00000000b
@@ -825,7 +877,6 @@ output_r_m proc
         cmp bl, 00000011b
         je print_out_r_m_with_offset
 
-        mov cx, 02h
         lea dx, r_SI
         cmp bl, 00000100b
         je print_out_r_m_with_offset
@@ -843,21 +894,21 @@ output_r_m proc
 
     print_only_adress:
         call output_segment_register
-        fwrite output_fh, bracket_left, 01h
-        call print_opcode
-        fwrite output_fh, bracket_right, 01h
+        fputs bracket_left
+        fputs dx
+        fputs bracket_right
 
         jmp end_check
     print_out_r_m:
-        call print_opcode
+        fputs dx
         jmp end_check
 
     print_out_r_m_with_offset:
         call output_segment_register
 
-        fwrite output_fh, bracket_left, 01h
-        call print_opcode
-        fwrite output_fh, plus, 03h
+        fputs bracket_left
+        fputs dx
+        fputs plus
         mov bl, [di + 1]
         and bl, 11000000b
         cmp bl, 10000000b
@@ -865,20 +916,20 @@ output_r_m proc
 
         mov al, [di + 2]
         call byte_to_hex
-        fwrite output_fh, [converted_hex], 02h
-        fwrite output_fh, bracket_right, 01h
+        fputs converted_hex, 02h
+        fputs bracket_right
 
         ret
 
         two_byte_offset:
             mov al, [di + 3]
             call byte_to_hex
-            fwrite output_fh, [converted_hex], 02h
+            fputs converted_hex, 02h
 
             mov al, [di + 2]
             call byte_to_hex
-            fwrite output_fh, [converted_hex], 02h
-            fwrite output_fh, bracket_right, 01h
+            fputs converted_hex, 02h
+            fputs bracket_right
 
          ret
     end_check:
@@ -886,27 +937,24 @@ ret
 output_r_m endp
 
 get_instruction_size proc
-    mov cx, 04h
 
+    mov cx, 04h
     mov bl, [di + 1]
     and bl, 11000000b
     cmp bl, 10000000b
     je size_found
 
-    
     mov cx, 03h
     cmp bl, 01000000b
     je size_found
 
     mov cx, 04h 
-
     mov bl, [di + 1]
     and bl, 00000111b
     cmp bl, 00000110b
     je size_found
 
     mov cx, 02h 
-
     size_found:
 ret
 get_instruction_size endp
@@ -935,43 +983,38 @@ output_segment_register proc
     ret
 
     print_seg_reg:
-        call print_opcode  
+        fputs dx
         pop dx
         pop cx 
 ret
 output_segment_register endp
 
-print_part_of_opcode proc
+output_8_bit_hex proc
     mov al, [di]
     call byte_to_hex
 
-    fwrite output_fh, [converted_hex], 02h
+    fputs converted_hex, 02h
 ret
-print_part_of_opcode endp
+output_8_bit_hex endp
 
-print_line_offset proc
+output_line_offset proc
     mov ax, [read_amount]
+
+    mov bl, [di + 1]
+    and bl, 11000000b 
+    cmp bl, 11000000b
+    jne no_seg_reg
+
+    dec ax
+
+    no_seg_reg:
     call word_to_hex
 
-    fwrite output_fh, colon, 02h
-    fwrite output_fh, [converted_hex], 04h
-    fwrite output_fh, new_line, 02h
+    fputs colon
+    fputs converted_hex, 04h
+    fputs new_line
 ret
-print_line_offset endp
-
-print_opcode proc
-    push ax
-    push bx
-
-    mov ax, 4000h
-    mov bx, output_fh
-    int 21h
-    jc exit
-
-    pop bx
-    pop ax
-ret
-print_opcode endp
+output_line_offset endp
 
 byte_to_hex proc
 	mov	ah, al
@@ -1007,25 +1050,51 @@ word_to_hex proc
 	ret
 word_to_hex endp
 
-search_for_help proc
-	mov bx, 82h
-	search_help:
-		cmp es:[bx], '?/'
-		je help
+strlen proc 
+    push si 
+    xor cx, cx
+    mov si, dx 
 
-		inc bx
-		loop search_help
+    lodsb
+    cmp al, 0
+    je strlen_found
+
+    find_length:
+        inc cx
+        lodsb 
+        cmp al, 0
+        je strlen_found
+
+        jmp find_length 
+
+    strlen_found:
+    pop si 
+ret 
+strlen endp 
+
+search_for_help proc
+	mov si, 83h
+    dec cx
+	search_help:
+        mov bl, es:[si]
+		cmp bl, '?'
+        jne continue_help_search
+		
+        mov bl, es:[si - 1]
+        cmp bl, '/'
+        je help
+
+        continue_help_search:
+            inc si
+            loop search_help
 	ret
 search_for_help endp
 
 get_file_name proc
+    push ax
     push di
-    mov di, 0 
-    mov output_buffer[0], 'r'
-    mov output_buffer[1], 'e'
-    mov output_buffer[2], 's'
-    mov output_buffer[3], '_'
 
+    xor di, di
 	clear_spaces:
 		mov dl, es:[si]
 		cmp dl, 32
@@ -1051,6 +1120,7 @@ get_file_name proc
 		jmp get_letters
 
 	word_found:
+        pop ax
         pop di
     	ret
 	get_file_name endp
